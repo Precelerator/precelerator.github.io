@@ -1,547 +1,1013 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Der Precelerator ist das Angebot für Projekte und Entrepreneurial Thinking am SCE, das Angebote und Beratungsleistungen rund um frühphasige Projekte bietet."
     />
+    <meta name="author" content="Fabio Maienschein" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="Precelerator" />
+    <!-- website name -->
+    <meta property="og:site" content="https://precelerator.github.io" />
+    <!-- website link -->
+    <meta property="og:title" content="Precelerator - Der Projekt-Space am SCE" />
+    <!-- title shown in the actual shared post -->
+    <meta
+      property="og:description"
+      content="Der Precelerator ist das Angebot für Projekte und Entrepreneurial Thinking am SCE, das Angebote und Beratungsleistungen rund um frühphasige Projekte bietet."
+    />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg TODO-->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Precelerator - Der Projekt-Space am SCE</title>
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png" />
   </head>
-  <body>
-    <header class="text-gray-700 body-font">
-      <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-      >
-        <a
-          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-orange-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">Precelerator</span>
-        </a>
-        <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
-        >
-          <a
-            class="mr-5 hover:text-gray-900"
-            href="https://mitstreiter-gesucht.precelerator.vercel.app/"
-            >Zur Projektplattform</a
-          >
-          <!-- <a class="mr-5 hover:text-gray-900">Second Link</a>
-          <a class="mr-5 hover:text-gray-900">Third Link</a>
-          <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
-        </nav>
-        <a
-          href="https://precelerator.github.io/blog/"
-          target="_blank"
-          class="inline-flex items-center text-white bg-orange-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0"
-        >
-          Zum Precelerator Blog
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
       </div>
-    </header>
-
-    <!-- Hero section -->
-    <section class="text-gray-700 body-font">
-      <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-      >
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
-          />
-        </div>
-        <div
-          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-        >
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
-          >
-            Der Space <br class="hidden lg:inline-block" />für deine Ideen
-          </h1>
-          <p class="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-            et, modi nam odit dolor illo ab culpa ipsa eveniet voluptatem quos.
-            Ipsum sed odit reiciendis minima quisquam ut, eius voluptatem!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section class="text-gray-700 body-font">
-      <div class="container px-5 py-12 mx-auto">
-        <div class="text-center mb-20">
-          <h1
-            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
-          >
-            Unser Angebot
-          </h1>
-          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            orem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-            et, modi nam odit dolor illo ab culpa ipsa eveniet voluptatem quos.
-          </p>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-orange-500 inline-flex"></div>
-          </div>
-        </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div
-            class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
-          >
-            <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-5 flex-shrink-0"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-10 h-10"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                PLAY
-              </h2>
-              <p class="leading-relaxed text-base">
-                ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-                et, modi nam odit dolor illo ab culpa ipsa eveniet voluptatem
-                quos.
-              </p>
-              <a class="mt-3 text-orange-500 inline-flex items-center"
-                >Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
-          >
-            <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-5 flex-shrink-0"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-10 h-10"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path
-                  d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
-                ></path>
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                CREATE
-              </h2>
-              <p class="leading-relaxed text-base">
-                ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-                et, modi nam odit dolor illo ab culpa ipsa eveniet voluptatem
-                quos.
-              </p>
-              <a class="mt-3 text-orange-500 inline-flex items-center"
-                >Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
-          >
-            <div
-              class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-5 flex-shrink-0"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-10 h-10"
-                viewBox="0 0 24 24"
-              >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                CONNECT
-              </h2>
-              <p class="leading-relaxed text-base">
-                ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-                et, modi nam odit dolor illo ab culpa ipsa eveniet voluptatem
-                quos.
-              </p>
-              <a class="mt-3 text-orange-500 inline-flex items-center"
-                >Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <button
-          class="flex mx-auto mt-16 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg"
-        >
-          Button
-        </button>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="text-gray-700 body-font">
-      <div class="container px-5 py-12 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">
-            Unser Team
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Hier findest du die Ansprechpartner für die verschiedenen Bereiche
-            des Precelerators.
-          </p>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-orange-500 inline-flex"></div>
-          </div>
-        </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="p-4 lg:w-1/4 md:w-1/2">
-            <div class="h-full flex flex-col items-center text-center">
-              <img
-                alt="team"
-                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                src="https://dummyimage.com/200x200"
-              />
-              <div class="w-full">
-                <h2 class="title-font font-medium text-lg text-gray-900">
-                  Martin Laarmann
-                </h2>
-                <h3 class="text-gray-500 mb-3">Projektleiter</h3>
-                <!-- <p class="mb-4">
-                  DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                  pack vaporware.
-                </p> -->
-              </div>
-            </div>
-          </div>
-          <div class="p-4 lg:w-1/4 md:w-1/2">
-            <div class="h-full flex flex-col items-center text-center">
-              <img
-                alt="team"
-                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                src="https://dummyimage.com/201x201"
-              />
-              <div class="w-full">
-                <h2 class="title-font font-medium text-lg text-gray-900">
-                  Maximilian Ender
-                </h2>
-                <h3 class="text-gray-500 mb-3">UI Developer</h3>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 lg:w-1/4 md:w-1/2">
-            <div class="h-full flex flex-col items-center text-center">
-              <img
-                alt="team"
-                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                src="https://dummyimage.com/202x202"
-              />
-              <div class="w-full">
-                <h2 class="title-font font-medium text-lg text-gray-900">
-                  Fabio Maienschein
-                </h2>
-                <h3 class="text-gray-500 mb-3">
-                  Experte für digitale Prototypen
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 lg:w-1/4 md:w-1/2">
-            <div class="h-full flex flex-col items-center text-center">
-              <img
-                alt="team"
-                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                src="https://dummyimage.com/203x203"
-              />
-              <div class="w-full">
-                <h2 class="title-font font-medium text-lg text-gray-900">
-                  Unknown
-                </h2>
-                <h3 class="text-gray-500 mb-3">Experte für Fertigung</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Logos -->
-    <section class="text-gray-700 body-font">
-      <div class="container px-5 py-12 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">
-            Unsere Partner
-          </h1>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-orange-500 inline-flex"></div>
-          </div>
-        </div>
-        <div class="flex flex-wrap -m-4 text-center">
-          <div class="p-4 sm:w-1/3 w-1/2">
-            <h2
-              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
-            >
-              Logo
-            </h2>
-            <p class="leading-relaxed">HM</p>
-          </div>
-          <div class="p-4 sm:w-1/3 w-1/2">
-            <h2
-              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
-            >
-              Logo
-            </h2>
-            <p class="leading-relaxed">SCE</p>
-          </div>
-          <div class="p-4 sm:w-1/3 w-1/2">
-            <h2
-              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
-            >
-              Logo
-            </h2>
-            <p class="leading-relaxed">BMBF</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact form -->
-    <section class="text-gray-700 body-font relative">
-      <div class="container px-5 py-12 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h1
-            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
-          >
-            Kontakt
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Du hast Fragen oder Anregungen zum Precelerator-Angebot? Kontaktiere
-            uns!
-          </p>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-orange-500 inline-flex"></div>
-          </div>
-        </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 w-1/2">
-              <input
-                class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2"
-                placeholder="Name"
-                type="text"
-              />
-            </div>
-            <div class="p-2 w-1/2">
-              <input
-                class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-orange-500 text-base px-4 py-2"
-                placeholder="Email Adresse"
-                type="email"
-              />
-            </div>
-            <div class="p-2 w-full">
-              <textarea
-                class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-orange-500 text-base px-4 py-2 resize-none block"
-                placeholder="Nachricht"
-              ></textarea>
-            </div>
-            <div class="p-2 w-full">
-              <button
-                class="flex mx-auto text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg"
-              >
-                Absenden
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-      <a class="text-orange-500">precelerator@sce.de</a>
-      <p class="leading-normal my-5">
-        W-Gebäude <br />
-        Lothstraße 21 <br />
-        80335 München
-      </p>
     </div>
+    <!-- end of preloader -->
 
-    <footer class="text-gray-700 body-font">
-      <div
-        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <!-- Text Logo - Use this if you don't have a graphic logo -->
+      <a class="navbar-brand logo-text page-scroll" href="index.html">Precelerator</a>
+
+      <!-- Image Logo -->
+      <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <a
-          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-orange-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">Precelerator</span>
-        </a>
-        <p
-          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
-        >
-          © 2020 Precelerator Team — Ansprechpartner
-          <a
-            href="https://www.sce.de/fabiomaienschein.html"
-            class="text-gray-600 ml-1"
-            target="_blank"
-            >@Fabio Maienschein</a
-          >
-        </p>
-        <span
-          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
-        >
-          <a class="text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path
-                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+      </button>
+      <!-- end of mobile menu toggle button -->
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#services">Angebote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#request">Beratung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#about">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+        <span class="nav-item social-icons">
+          <span class="fa-stack">
+            <a href="#your-link">
+              <i class="fas fa-circle fa-stack-2x facebook"></i>
+              <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+          </span>
+          <span class="fa-stack">
+            <a href="#your-link">
+              <i class="fas fa-circle fa-stack-2x twitter"></i>
+              <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+          </span>
         </span>
       </div>
-    </footer>
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="header-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="text-container">
+                <h2>
+                  <span class="turquoise">Connect. Train. Create.</span>
+                </h2>
+                <br />
+                <h1>Der Projekt-Space an der Hochschule München</h1>
+
+                <p class="p-large">
+                  Der Precelerator ist das Angebot für Projekte und Entrepreneurial Thinking am SCE, das Angebote und
+                  Beratungsleistungen rund um frühphasige Projekte bietet.
+                </p>
+                <a class="btn-solid-lg page-scroll" href="#services">MEHR ERFAHREN</a>
+              </div>
+              <!-- end of text-container -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-5">
+              <div class="image-container">
+                <img class="img-fluid" src="images/header-teamwork.svg" alt="alternative" />
+              </div>
+              <!-- end of image-container -->
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container -->
+      </div>
+      <!-- end of header-content -->
+    </header>
+    <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Customers -->
+    <div class="slider-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h5>Ein Projekt von</h5>
+
+            <!-- Image Slider -->
+            <div class="slider-container">
+              <div class="swiper-container image-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/customer-logo-1.png" alt="alternative" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/customer-logo-2.png" alt="alternative" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-container">
+                      <img class="img-responsive" src="images/customer-logo-3.png" alt="alternative" />
+                    </div>
+                  </div>
+                </div>
+                <!-- end of swiper-wrapper -->
+              </div>
+              <!-- end of swiper container -->
+            </div>
+            <!-- end of slider-container -->
+            <!-- end of image slider -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Business Growth Services</h2>
+            <p class="p-heading p-large">
+              We serve small and medium sized companies in all tech related industries with high quality growth services
+              which are presented below
+            </p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Card -->
+            <div class="card">
+              <img class="card-image" src="images/services-icon-1.svg" alt="alternative" />
+              <div class="card-body">
+                <h4 class="card-title">Market Analysis</h4>
+                <p>
+                  Our team of enthusiastic marketers will analyse and evaluate how your company stacks against the
+                  closest competitors
+                </p>
+              </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+              <img class="card-image" src="images/services-icon-2.svg" alt="alternative" />
+              <div class="card-body">
+                <h4 class="card-title">Opportunity Scan</h4>
+                <p>
+                  Once the market analysis process is completed our staff will search for opportunities that are in
+                  reach
+                </p>
+              </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+              <img class="card-image" src="images/services-icon-3.svg" alt="alternative" />
+              <div class="card-body">
+                <h4 class="card-title">Action Plan</h4>
+                <p>
+                  With all the information in place you will be presented with an action plan that your company needs to
+                  follow
+                </p>
+              </div>
+            </div>
+            <!-- end of card -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-1 -->
+    <!-- end of services -->
+
+    <!-- Details 1 -->
+    <div class="basic-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h2>Design And Plan Your Business Growth Steps</h2>
+              <p>
+                Use our staff and our expertise to design and plan your business growth strategy. Evolo team is eager to
+                advise you on the best opportunities that you should look into
+              </p>
+              <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img class="img-fluid" src="images/details-1-office-worker.svg" alt="alternative" />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+    <!-- Details 2 -->
+    <div class="basic-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img class="img-fluid" src="images/details-2-office-team-work.svg" alt="alternative" />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h2>Search For Optimization Wherever Is Possible</h2>
+              <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                  <i class="fas fa-check"></i>
+                  <div class="media-body">Basically we'll teach you step by step what you need to do</div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-check"></i>
+                  <div class="media-body">In order to develop your company and reach new heights</div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-check"></i>
+                  <div class="media-body">Everyone will be pleased from stakeholders to employees</div>
+                </li>
+              </ul>
+              <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of basic-2 -->
+    <!-- end of details 2 -->
+
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+    <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="container">
+        <div class="row">
+          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+          <div class="col-lg-8">
+            <div class="image-container">
+              <img class="img-fluid" src="images/details-lightbox-1.svg" alt="alternative" />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-4">
+            <h3>Design And Plan</h3>
+            <hr />
+            <h5>Core feature</h5>
+            <p>
+              The emailing module basically will speed up your email marketing operations while offering more subscriber
+              control.
+            </p>
+            <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+            <ul class="list-unstyled li-space-lg">
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">List building framework</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Easy database browsing</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">User administration</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Automate user signup</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Quick formatting tools</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Fast email checking</div>
+              </li>
+            </ul>
+            <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a>
+            <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 1 -->
+
+    <!-- Details Lightbox 2 -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="container">
+        <div class="row">
+          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+          <div class="col-lg-8">
+            <div class="image-container">
+              <img class="img-fluid" src="images/details-lightbox-2.svg" alt="alternative" />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-4">
+            <h3>Search To Optimize</h3>
+            <hr />
+            <h5>Core feature</h5>
+            <p>
+              The emailing module basically will speed up your email marketing operations while offering more subscriber
+              control.
+            </p>
+            <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+            <ul class="list-unstyled li-space-lg">
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">List building framework</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Easy database browsing</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">User administration</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Automate user signup</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Quick formatting tools</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">Fast email checking</div>
+              </li>
+            </ul>
+            <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a>
+            <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 2 -->
+    <!-- end of details lightboxes -->
+
+    <!-- Request -->
+    <div id="request" class="form-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2>Fülle das Formular aus, um eine unverbindliche Beratungssession zu vereinbaren</h2>
+            <p>
+              Du willst mehr über das Precelerator-Angebot erfahren? Vereinbare eine 20-minütige Beratungssession, bei
+              der wir dir unser Angebot vorstellen und Überschneidungen mit deienem Projekt erarbeiten!
+              <br />
+              Wir bieten:
+            </p>
+            <ul class="list-unstyled li-space-lg">
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">
+                  <strong class="blue">Ressourcen und Anregungen</strong>
+                  rund um Entrepreneurship und Entrepreneurial Thinking
+                </div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">
+                  <strong class="blue">Technische Beratung </strong>
+                  zur Umsetzung von Prototypen (egal ob digital oder analog)
+                </div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">
+                  <strong class="blue">Kontakte und Netzwerk </strong> über das SCE und die HM
+                </div>
+              </li>
+              <li class="media">
+                <i class="fas fa-check"></i>
+                <div class="media-body">
+                  <strong class="blue">Gadgets & Ausstattung</strong> zum Ausprobieren, Lehrveranstaltungen und Demos
+                </div>
+              </li>
+            </ul>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-5">
+            <!-- Request Form -->
+            <div class="form-container">
+              <form id="requestForm" data-toggle="validator" data-focus="false">
+                <div class="form-group">
+                  <input type="text" class="form-control-input" id="rname" name="rname" required />
+                  <label class="label-control" for="rname">Name</label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control-input" id="remail" name="remail" required />
+                  <label class="label-control" for="remail">Email</label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <select class="form-control-select" id="rselect" required>
+                    <option class="select-option" value="" disabled selected>Ich bin...</option>
+                    <option class="select-option" value="Student">Student</option>
+                    <option class="select-option" value="Lehrkraft">Lehrkraft</option>
+                    <option class="select-option" value="Mitarbeiter">HM-Mitarbeiter</option>
+                    <option class="select-option" value="Sonstiges">Sonstiges</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group checkbox">
+                  <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required />Ich stimme zu,
+                  dass meine Daten gemäß der <a href="privacy-policy.html">Privacy Policy</a> und den
+                  <a href="terms-conditions.html">Terms & Conditions</a>
+                  verarbeitet werden dürfen.
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="form-control-submit-button">ANFRAGEN</button>
+                </div>
+                <div class="form-message">
+                  <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                </div>
+              </form>
+            </div>
+            <!-- end of form-container -->
+            <!-- end of request form -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of form-1 -->
+    <!-- end of request -->
+
+    <!-- Video -->
+    <div class="basic-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Check Out The Video</h2>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Video Preview -->
+            <div class="image-container">
+              <div class="video-wrapper">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                  <img class="img-fluid" src="images/video-frame.svg" alt="alternative" />
+                  <span class="video-play-button">
+                    <span></span>
+                  </span>
+                </a>
+              </div>
+              <!-- end of video-wrapper -->
+            </div>
+            <!-- end of image-container -->
+            <!-- end of video preview -->
+
+            <p>
+              This video will show you a case study for one of our
+              <strong>Major Customers</strong> and will help you understand why your startup needs Evolo in this highly
+              competitive market
+            </p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of basic-3 -->
+    <!-- end of video -->
+
+    <!-- Testimonials -->
+    <div class="slider-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img class="img-fluid" src="images/testimonials-2-men-talking.svg" alt="alternative" />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <h2>Testimonials</h2>
+
+            <!-- Card Slider -->
+            <div class="slider-container">
+              <div class="swiper-container card-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img class="card-image" src="images/testimonial-1.svg" alt="alternative" />
+                      <div class="card-body">
+                        <p class="testimonial-text">
+                          I just finished my trial period and was so amazed with the support and results that I
+                          purchased Evolo right away at the special price.
+                        </p>
+                        <p class="testimonial-author">Jude Thorn - Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
+
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img class="card-image" src="images/testimonial-2.svg" alt="alternative" />
+                      <div class="card-body">
+                        <p class="testimonial-text">
+                          Evolo has always helped or startup to position itself in the highly competitive market of
+                          mobile applications. You will not regret using it!
+                        </p>
+                        <p class="testimonial-author">Marsha Singer - Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
+
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img class="card-image" src="images/testimonial-3.svg" alt="alternative" />
+                      <div class="card-body">
+                        <p class="testimonial-text">
+                          Love their services and was so amazed with the support and results that I purchased Evolo for
+                          two years in a row. They are awesome.
+                        </p>
+                        <p class="testimonial-author">Roy Smith - Marketer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
+                </div>
+                <!-- end of swiper-wrapper -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- end of add arrows -->
+              </div>
+              <!-- end of swiper-container -->
+            </div>
+            <!-- end of slider-container -->
+            <!-- end of card slider -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+
+    <!-- About -->
+    <div id="about" class="basic-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Unser Team</h2>
+            <p class="p-heading p-large">
+              Unser Team steht dir für Fragen rund um den Precelerator zur Verfügung. Nutze das Kontaktformular unten
+              oder schreib uns eine Mail an
+              <a href="mailto:precelerator@sce.de">precelerator@sce.de</a>
+            </p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Team Member -->
+            <div class="team-member">
+              <div class="image-wrapper">
+                <img class="img-fluid" src="images/team-member-2.svg" alt="alternative" />
+              </div>
+              <!-- end of image-wrapper -->
+              <p class="p-large"><strong>Martin Laarmann</strong></p>
+              <p class="job-title">Projektleiter</p>
+              <span class="social-icons">
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </a>
+                </span>
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </a>
+                </span>
+              </span>
+              <!-- end of social-icons -->
+            </div>
+            <!-- end of team-member -->
+            <!-- end of team member -->
+
+            <!-- Team Member -->
+            <div class="team-member">
+              <div class="image-wrapper">
+                <img class="img-fluid" src="images/team-member-2.svg" alt="alternative" />
+              </div>
+              <!-- end of image wrapper -->
+              <p class="p-large"><strong>Maximilian Ender</strong></p>
+              <p class="job-title">Projektleiter</p>
+              <span class="social-icons">
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </a>
+                </span>
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </a>
+                </span>
+              </span>
+              <!-- end of social-icons -->
+            </div>
+            <!-- end of team-member -->
+            <!-- end of team member -->
+
+            <!-- Team Member -->
+            <div class="team-member">
+              <div class="image-wrapper">
+                <img class="img-fluid" src="images/team-member-2.svg" alt="alternative" />
+              </div>
+              <!-- end of image wrapper -->
+              <p class="p-large"><strong>Fabio Maienschein</strong></p>
+              <p class="job-title">Ansprechpartner Digitale Prototypen</p>
+              <span class="social-icons">
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </a>
+                </span>
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </a>
+                </span>
+              </span>
+              <!-- end of social-icons -->
+            </div>
+            <!-- end of team-member -->
+            <!-- end of team member -->
+
+            <!-- Team Member -->
+            <div class="team-member">
+              <div class="image-wrapper">
+                <img class="img-fluid" src="images/team-member-2.svg" alt="alternative" />
+              </div>
+              <!-- end of image wrapper -->
+              <p class="p-large"><strong>John Doe</strong></p>
+              <p class="job-title">Experte für Fertigungstechnik</p>
+              <span class="social-icons">
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </a>
+                </span>
+                <span class="fa-stack">
+                  <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </a>
+                </span>
+              </span>
+              <!-- end of social-icons -->
+            </div>
+            <!-- end of team-member -->
+            <!-- end of team member -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of basic-4 -->
+    <!-- end of about -->
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Kontakt</h2>
+            <ul class="list-unstyled li-space-lg">
+              <li class="address">Tritt über das Formular mit uns in Kontakt oder kontaktiere uns per E-Mail!</li>
+              <li><i class="fas fa-map-marker-alt"></i>Lothstraße 21, 80797 München</li>
+              <li>
+                <i class="fas fa-envelope"></i
+                ><a class="turquoise" href="mailto:precelerator@sce.de">precelerator@sce.de</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.6100343684916!2d11.554746115835144!3d48.15632290783392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75e004131e7f%3A0xefaa5f79a9b82a15!2sLothstra%C3%9Fe%2021%2C%2080797%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1601635484733!5m2!1sde!2sde"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <!-- Contact Form -->
+            <form id="contactForm" data-toggle="validator" data-focus="false">
+              <div class="form-group">
+                <input type="text" class="form-control-input" id="cname" required />
+                <label class="label-control" for="cname">Name</label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control-input" id="cemail" required />
+                <label class="label-control" for="cemail">E-Mail</label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                <label class="label-control" for="cmessage">Nachricht</label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group checkbox">
+                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required />I habe die
+                <a href="privacy-policy.html">Datenschutzerklärung</a> sowie den
+                <a href="disclaimer.html">Haftungsausschluss</a> zur Kenntnis genommen und stimme diesen zu.
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-control-submit-button">ABSENDEN</button>
+              </div>
+              <div class="form-message">
+                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+              </div>
+            </form>
+            <!-- end of contact form -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of form-2 -->
+    <!-- end of contact -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-col">
+              <h4>Precelerator</h4>
+              <p>Der Projekt-Space an der HM.</p>
+            </div>
+          </div>
+          <!-- end of col -->
+          <div class="col-md-4">
+            <div class="footer-col middle">
+              <h4>Wichtige Links</h4>
+              <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    Unser Blog:
+                    <a class="turquoise" href="https://precelerator.github.io/blog">Precelerator Blog</a>
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    Unsere Matching-Plattform für Ideengeber und Interessierte:
+                    <a class="turquoise" href="https://mitstreiter-gesucht.precelerator.vercel.app/"
+                      >Mitstreiter gesucht!</a
+                    >
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    Lies unsere
+                    <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>,
+                    <a class="turquoise" href="disclaimer.html">Privacy Policy</a>,
+                    <a class="turquoise" href="impressum.html">Impressum</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of col -->
+          <div class="col-md-4">
+            <div class="footer-col last">
+              <h4>Social Media</h4>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of footer -->
+    <!-- end of footer -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="p-small">Template © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- enf of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of copyright -->
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script>
+    <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script>
+    <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
   </body>
 </html>
