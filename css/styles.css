@@ -822,9 +822,9 @@ input[type="checkbox"] {
   flex-wrap: wrap;
 }
 
-@media (min-device-width: 800px) {
+@media (min-device-width: 600px) {
   .logos {
-    margin-left: 50px;
+    margin-left: 100px;
   }
 }
 
