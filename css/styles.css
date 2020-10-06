@@ -822,12 +822,6 @@ input[type="checkbox"] {
   flex-wrap: wrap;
 }
 
-@media (min-device-width: 600px) {
-  .logos {
-    margin-left: 100px;
-  }
-}
-
 /************************/
 /*     06. Services     */
 /************************/
