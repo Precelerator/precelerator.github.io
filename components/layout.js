@@ -42,6 +42,7 @@ export default function Layout({ children, home }) {
                 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
                 <link rel="manifest" href="/images/favicons/site.webmanifest" />
                 <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+                <link rel="stylesheet" type="text/css" href="/cookieconsent.min.css" />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
                 {/* Scripts */}
@@ -73,8 +74,8 @@ export default function Layout({ children, home }) {
             {children}
             <Footer></Footer>
             <Copyright></Copyright>
-            <script src="/js/cookies-eu-banner.js"></script>
-                <script src="/js/cookies-eu-banner-custom.js"></script>
+            <script src="/js/cookieconsent.min.js" data-cfasync="false"></script>
+            <script src="/js/cookieconsent-custom.js"></script>
         </div>
     )
 }

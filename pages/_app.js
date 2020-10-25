@@ -3,6 +3,7 @@ import '../assets/css/fontawesome-all.css'
 import '../assets/css/swiper.css'
 import '../assets/css/magnific-popup.css'
 import '../assets/css/styles.css'
+import '../assets/css/cookieconsent.min.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
