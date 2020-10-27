@@ -258,7 +258,7 @@ var klaroConfig = {
                     if(consent !== false && app.name=='googleanalytics'){
                         var googlaAnalyticsJS = document.createElement('script');
                         googlaAnalyticsJS.type = 'text/javascript';
-                        googlaAnalyticsJS.src = '/klaro/google-analytics.js';
+                        googlaAnalyticsJS.src = '/js/klaro/google-analytics.js';
                         document.getElementsByTagName('head')[0].appendChild(googlaAnalyticsJS);
                     }else{
                   clearCookie('_gat','.'+domainName,'/');
