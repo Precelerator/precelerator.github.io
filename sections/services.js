@@ -31,6 +31,12 @@ export default function Services() {
                                     <strong className="blue">Kontakte und Netzwerk </strong> über das SCE und die HM
                                     </div>
                                 </li>
+                                <li className="media">
+                                    <i className="fas fa-check"></i>
+                                    <div className="media-body">
+                                    <strong className="blue">Vernetzung und Inspiration </strong> durch die Precelerator Projektwand
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         </div>
@@ -49,7 +55,7 @@ export default function Services() {
                                 <li className="media">
                                     <i className="fas fa-check"></i>
                                     <div className="media-body">
-                                    <strong className="blue">Ressourcen und Anregungen</strong>
+                                    <strong className="blue">Ressourcen und Anregungen </strong>
                                     rund um Entrepreneurship und Entrepreneurial Thinking
                                     </div>
                                 </li>
@@ -78,7 +84,13 @@ export default function Services() {
                                 <li className="media">
                                     <i className="fas fa-check"></i>
                                     <div className="media-body">
-                                    <strong className="blue">Gadgets & Ausstattung</strong> zum Ausprobieren, Lehrveranstaltungen und Demos
+                                    <strong className="blue">Gadgets & Werkzeuge</strong> zum Ausprobieren, Lehrveranstaltungen und Demos
+                                    </div>
+                                </li>
+                                <li className="media">
+                                    <i className="fas fa-check"></i>
+                                    <div className="media-body">
+                                    <strong className="blue">Modernste Ausstattung:</strong> 3D-Drucker, High-End Rechner, Filmstudio, VR-Brillen, etc.
                                     </div>
                                 </li>
                             </ul>
