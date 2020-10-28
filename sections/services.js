@@ -24,6 +24,14 @@ export default function Services() {
                             Der Precelerator bringt Ideensucher und Interessierte mit Fachexperten und Ideengebern zusammen. Damit ist er der ideale
                             Co-Working Space, an dem alle Fakultäten zusammenkommen und sich austauschen können.
                             </p>
+                            <ul className="list-unstyled li-space-lg">
+                                <li className="media">
+                                    <i className="fas fa-check"></i>
+                                    <div className="media-body">
+                                    <strong className="blue">Kontakte und Netzwerk </strong> über das SCE und die HM
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         </div>
                         {/* end of card */}
@@ -37,6 +45,22 @@ export default function Services() {
                             Der Precelerator stellt Ressourcen, Ansprechpartner und Anregungen bereit, mithilfe derer du die für
                             dein Projekt notwendigen Skills aneignen kannst.
                             </p>
+                            <ul className="list-unstyled li-space-lg">
+                                <li className="media">
+                                    <i className="fas fa-check"></i>
+                                    <div className="media-body">
+                                    <strong className="blue">Ressourcen und Anregungen</strong>
+                                    rund um Entrepreneurship und Entrepreneurial Thinking
+                                    </div>
+                                </li>
+                                <li className="media">
+                                    <i className="fas fa-check"></i>
+                                    <div className="media-body">
+                                    <strong className="blue">Technische Beratung </strong>
+                                    zur Umsetzung von Prototypen (egal ob digital oder analog)
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         </div>
                         {/* end of card */}
@@ -50,6 +74,14 @@ export default function Services() {
                             Der Precelerator versteht sich als Ort, an dem Neues geschaffen wird - seien es innovative
                             Geschäftsmodelle, digitale Technologien oder gefertigte Prototypen.
                             </p>
+                            <ul className="list-unstyled li-space-lg">
+                                <li className="media">
+                                    <i className="fas fa-check"></i>
+                                    <div className="media-body">
+                                    <strong className="blue">Gadgets & Ausstattung</strong> zum Ausprobieren, Lehrveranstaltungen und Demos
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         </div>
                         {/* end of card */}
