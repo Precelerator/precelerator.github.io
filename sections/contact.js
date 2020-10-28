@@ -7,6 +7,13 @@ export default function Contact() {
                     <div className="col-lg-12">
                         <h2>Kontakt</h2>
                         <ul className="list-unstyled li-space-lg">
+                        <li><i className="fas fa-check"></i> Du willst dich kreativ austoben und endlich anwenden, was Du im Studium theoretisch gelernt hast?</li>
+                        <li><i className="fas fa-check"></i> Du denkst, dass dir noch Skills fehlen, um wirklich etwas zu erschaffen?</li>
+                        <li><i className="fas fa-check"></i>Du suchst motivierte Mitstreiter, um Deine Idee zu entwickeln?</li>
+                        <li><i className="fas fa-check"></i>Du möchtest mal mit neuesten Technikgadgets experimentieren?</li>
+                        <li><i className="fas fa-check"></i>Du möchtest einfach mal Startup-Luft schnuppern und herausfinden: “What the f**k is entrepreneurship?”</li>
+                        <li><i className="fas fa-check"></i>Was bietet der Precelerator auch in Corona-Zeiten?</li>
+                        <br/><br/>
                         <li className="address">Tritt über das formular mit uns in Kontakt oder kontaktiere uns per E-Mail!</li>
                         <li><i className="fas fa-map-marker-alt"></i>Lothstraße 21, 80797 München</li>
                         <li>
@@ -44,9 +51,9 @@ export default function Contact() {
                                 <div className="help-block with-errors"></div>
                             </div>
                             <div className="form-group checkbox">
-                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required />Ich habe die
-                                <a href="privacy-policy.html">Datenschutzerklärung</a> sowie den
-                                <a href="disclaimer.html">Haftungsausschluss</a> zur Kenntnis genommen und stimme diesen zu.
+                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required />Ich habe die &nbsp;
+                                <a href="/privacy-policy">Datenschutzerklärung</a> sowie den &nbsp;
+                                <a href="/disclaimer">Haftungsausschluss</a> zur Kenntnis genommen und stimme diesen zu.
                                 <div className="help-block with-errors"></div>
                             </div>
                             <div className="form-group">

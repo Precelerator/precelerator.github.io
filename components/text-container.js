@@ -1,10 +1,10 @@
 export default function TextContainer({ children} ) {
     return (
-        <div class="ex-basic-2">
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="text-container">
+        <div className="ex-basic-2">
+            <div className="container">
+                <div className="row">
+                <div className="col-lg-10 offset-lg-1">
+                    <div className="text-container">
                         { children }
                     </div>
                 </div>

@@ -9,7 +9,7 @@ export default function About() {
                         <p className="p-heading p-large">
                         Unser Team steht dir für Fragen rund um den Precelerator zur Verfügung. Nutze das Kontaktformular unten
                         oder schreib uns eine Mail an
-                        <a href="mailto:precelerator@sce.de">precelerator@sce.de</a>
+                        &nbsp;<a href="mailto:precelerator@sce.de">precelerator@sce.de</a>
                         </p>
                     </div>
                     {/* end of col */}

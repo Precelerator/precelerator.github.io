@@ -5,7 +5,7 @@ export default function Contact() {
                 <div className="container">
                     <div className="row">
                     <div className="col-lg-12">
-                        <p className="p-small">Template © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                        <p className="p-small">© 2020 <a href="https://www.sce.de/">Strascheg Center for Entrepeneurship</a></p>
                     </div>
                     </div>
                 </div>

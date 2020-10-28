@@ -35,9 +35,9 @@ export default function Footer() {
                             <i className="fas fa-square"></i>
                             <div className="media-body">
                                 Lies unsere 
-                                <a className="turquoise" href="/disclaimer"> Terms & Conditions</a>, 
-                                <a className="turquoise" href="/privacy-policy"> Privacy Policy</a>, 
-                                <a className="turquoise" href="/impressum"> Impressum</a>
+                                &nbsp;<a className="turquoise" href="/disclaimer">Terms & Conditions</a>, 
+                                &nbsp;<a className="turquoise" href="/privacy-policy">Privacy Policy</a>, 
+                                &nbsp;<a className="turquoise" href="/impressum">Impressum</a>
                             </div>
                             </li>
                         </ul>
@@ -48,29 +48,36 @@ export default function Footer() {
                         <div className="footer-col last">
                         <h4>Social Media</h4>
                         <span className="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.facebook.com/StraschegCenterForEntrepreneurship" target="_blank">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
                         <span className="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.instagram.com/straschegcenter/?hl=de" target="_blank">
                             <i className="fas fa-circle fa-stack-2x"></i>
-                            <i className="fab fa-twitter fa-stack-1x"></i>
+                            <i className="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
                         <span className="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.youtube.com/channel/UCTt1uc9dSzAyLasmcCy0H5Q" target="_blank">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-youtube fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span className="fa-stack">
-                            <a href="#your-link">
+                        <span className="fa-stack" target="_blank">
+                            <a href="https://de.linkedin.com/company/strascheg-center-for-entrepreneurship-ggmbh">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-linkedin-in fa-stack-1x"></i>
                             </a>
                         </span>
+                        <span className="fa-stack" target="_blank">
+                            <a href="https://www.xing.com/communities/groups/entrepreneurship-an-der-hochschule-muenchen-1054465">
+                            <i className="fas fa-circle fa-stack-2x"></i>
+                            <i className="fab fa-xing fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <p>Strascheg Center für Entrepreneurship</p>
                         </div>
                     </div>
                     {/* end of col */}

@@ -7,22 +7,22 @@ export default function Services() {
                     <div className="col-lg-12">
                         <h2>Angebote</h2>
                         <p className="p-heading p-large">
-                        Mit dem Precelerator schafft die Hochschule und das SCE, gefördert durch das Bundesministerium für Bildung und forschung, einen offenen Kreativraum zum Experimentieren und Umsetzen eigener Ideen, in dem verantwortungsvolles unternehmerisches Denken und Handeln vermittelt werden soll.
+                        Mit dem Precelerator schafft die Hochschule und das SCE, gefördert durch das Bundesministerium für Bildung und Forschung, einen offenen Kreativraum zum Experimentieren und Umsetzen eigener Ideen, in dem verantwortungsvolles unternehmerisches Denken und Handeln vermittelt werden soll.
                         </p>
                     </div>
                     {/* end of col */}
                     </div>
                     {/* end of row */}
                     <div className="row">
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 flex-container">
                         {/* Card */}
                         <div className="card">
                         <img className="card-image" src="/images/services-icon-1.svg" alt="alternative" />
                         <div className="card-body">
                             <h4 className="card-title">CONNECT.</h4>
                             <p>
-                            Der Precelerator bringt Ideengeber, Interessierte und Fachexperten zusammen und ist somit der ideale
-                            Ort zur interdisziplinären Zusammenarbeit.
+                            Der Precelerator bringt Ideensucher und Interessierte mit Fachexperten und Ideengebern zusammen. Damit ist er der ideale
+                            Co-Working Space, an dem alle Fakultäten zusammenkommen und sich austauschen können.
                             </p>
                         </div>
                         </div>

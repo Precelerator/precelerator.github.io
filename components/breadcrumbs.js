@@ -1,11 +1,11 @@
 export default function Breadcrumbs({ siteName} ) {
     return (
-        <div class="ex-basic-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumbs">
-                        <a href="/">Home</a><i class="fa fa-angle-double-right"></i><span>{siteName}</span>
+        <div className="ex-basic-1">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="breadcrumbs">
+                        <a href="/">Home</a><i className="fa fa-angle-double-right"></i><span>{siteName}</span>
                         </div>
                     </div>
                 </div>

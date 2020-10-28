@@ -31,9 +31,6 @@ export default function Navigation() {
             <a className="nav-link page-scroll" href="#services">Angebote</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#request">Beratung</a>
-          </li>
-          <li className="nav-item">
             <a className="nav-link page-scroll" href="#about">Team</a>
           </li>
           <li className="nav-item">
