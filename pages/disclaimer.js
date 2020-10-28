@@ -40,6 +40,10 @@ export default function Disclaimer() {
                 auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
                 Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
               </p>
+              <h3>Attribution</h3>
+              <p>
+                Vectors licenced through a Premium subscription of <a href="https://www.freepik.com/vectors/business">Freepik</a>
+              </p>
         </TextContainer>
         <Breadcrumbs siteName="Impressum"></Breadcrumbs>
     </Layout>
