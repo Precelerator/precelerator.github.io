@@ -48,31 +48,31 @@ export default function Footer() {
                         <div className="footer-col last">
                         <h4>Social Media</h4>
                         <span className="fa-stack">
-                            <a href="https://www.facebook.com/StraschegCenterForEntrepreneurship" target="_blank">
+                            <a href="https://www.facebook.com/StraschegCenterForEntrepreneurship" target="_blank" title="SCE Facebook">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
                         <span className="fa-stack">
-                            <a href="https://www.instagram.com/straschegcenter/?hl=de" target="_blank">
+                            <a href="https://www.instagram.com/straschegcenter/?hl=de" target="_blank" title="SCE Instagram">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
                         <span className="fa-stack">
-                            <a href="https://www.youtube.com/channel/UCTt1uc9dSzAyLasmcCy0H5Q" target="_blank">
+                            <a href="https://www.youtube.com/channel/UCTt1uc9dSzAyLasmcCy0H5Q" target="_blank" title="SCE Youtube">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-youtube fa-stack-1x"></i>
                             </a>
                         </span>
                         <span className="fa-stack" target="_blank">
-                            <a href="https://de.linkedin.com/company/strascheg-center-for-entrepreneurship-ggmbh">
+                            <a href="https://de.linkedin.com/company/strascheg-center-for-entrepreneurship-ggmbh" target="_blank" title="SCE LinkedIn">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-linkedin-in fa-stack-1x"></i>
                             </a>
                         </span>
                         <span className="fa-stack" target="_blank">
-                            <a href="https://www.xing.com/communities/groups/entrepreneurship-an-der-hochschule-muenchen-1054465">
+                            <a href="https://www.xing.com/communities/groups/entrepreneurship-an-der-hochschule-muenchen-1054465" target="_blank" title="SCE Xing">
                             <i className="fas fa-circle fa-stack-2x"></i>
                             <i className="fab fa-xing fa-stack-1x"></i>
                             </a>

@@ -1667,6 +1667,46 @@ a:hover.back-to-top {
 /*****************************/
 /*     20. Media Queries     */
 /*****************************/
+
+/* Max-width 767 px */
+@media (max-width: 768px) {
+  .header .header-content {
+    padding-top: 6rem;
+  }
+
+  .header .col-lg-7 h2 {
+    font-size: 1.8rem;
+  }
+
+  .header .col-lg-7 h1 {
+    font-size: 2.2rem;
+  }
+
+  .logos img {
+    padding-bottom: 20px;
+  }
+
+  .slider-1 {
+    padding-bottom: 0;
+  }
+
+  .cards-1 .card {
+    margin-bottom: 0.5rem;
+  }
+
+  .basic-4 .team-member {
+    margin-bottom: 1rem;
+  }
+
+  .p-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .footer {
+    padding-top: 2.5rem;
+  }
+}
+
 /* Min-width width 768px */
 @media (min-width: 768px) {
   /* General Styles */

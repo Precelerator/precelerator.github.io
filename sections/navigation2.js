@@ -39,9 +39,9 @@ export default function Navigation() {
                 <a className="nav-link" href="/">Kontakt</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://precelerator.github.io/blog" target="_blank" rel="noopener"
-                  >Precelerator Blog</a
-                >
+                <a className="nav-link" href="https://precelerator.github.io/blog" target="_blank" rel="noopener" title="Link zum Precelerator Blog">
+                  Precelerator Blog
+                </a>
               </li>
             </ul>
             {/* <span className="nav-item social-icons">
