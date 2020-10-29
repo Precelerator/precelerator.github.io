@@ -23,7 +23,7 @@ Table Of Contents:
 14. About
 15. Contact
 16. Footer
-17. Copyright
+17. Projects
 18. Back To Top Button
 19. Extra Pages
 20. Media Queries
@@ -815,6 +815,10 @@ button {
   display: flex;
   align-items: center;
   padding: 0;
+}
+
+.image-container .img-fluid {
+  width: 1000px;
 }
 
 .header .text-container {
