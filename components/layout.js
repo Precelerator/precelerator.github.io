@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Navigation from '../sections/navigation'
 import Navigation2 from '../sections/navigation2'
 import Footer from '../sections/footer'
-import Copyright from '../sections/copyright'
 
 export default function Layout({ children, home }) {
     return (
@@ -47,6 +46,10 @@ export default function Layout({ children, home }) {
                 {/* Scripts */}
                 <script src="/js/jquery.min.js"></script>
                 {/* jQuery for Bootstrap's JavaScript plugins */}
+                <script src="/js/popper.min.js"></script>
+                {/* Popper tooltip library for Bootstrap */}
+                <script src="/js/bootstrap.min.js"></script>
+                {/* Bootstrap framework */}
                 <script src="/js/jquery.easing.min.js"></script>
                 {/* jQuery Easing for smooth scrolling between anchors */}
                 <script src="/js/jquery.magnific-popup.js"></script>
@@ -66,7 +69,6 @@ export default function Layout({ children, home }) {
             { home ? <Navigation></Navigation> : <Navigation2></Navigation2> }           
             {children}
             <Footer></Footer>
-            <Copyright></Copyright>
             <script src="/js/klaro/config.klaro.js" type="application/javascript"></script>
             <script src="/js/klaro/0.6.11.klaro.js" type="application/javascript"></script>
         </div>

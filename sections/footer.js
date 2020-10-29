@@ -77,7 +77,7 @@ export default function Footer() {
                             <i className="fab fa-xing fa-stack-1x"></i>
                             </a>
                         </span>
-                        <p>Strascheg Center für Entrepreneurship</p>
+                        <p className="p-small">© 2020 <a href="https://www.sce.de/">Strascheg Center for Entrepeneurship</a></p>
                         </div>
                     </div>
                     {/* end of col */}
