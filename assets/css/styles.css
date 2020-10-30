@@ -842,7 +842,7 @@ button {
   padding-top: 2.25rem;
   padding-bottom: 2.125rem;
   text-align: center;
-  background-color: #ecf0f5c2;
+  background-color: #dff7fb78;
 }
 
 .slider-1 h5 {
@@ -1404,7 +1404,7 @@ button {
 /*     14. Team     */
 /*********************/
 #team {
-  background-color: #ecf0f5c2;
+  background-color: #dff7fb78;
 }
 
 .basic-4 {
@@ -1521,7 +1521,7 @@ button {
 .footer {
   padding-top: 4.625rem;
   padding-bottom: 0.5rem;
-  background-color: #ecf0f5c2;
+  background-color: #dff7fb78;
   border-top: 1px solid #c4d8dc;
 }
 
@@ -1565,6 +1565,26 @@ button {
 
 .footer .fa-stack:hover .fa-stack-2x {
   color: #00a7bd;
+}
+
+/**********************/
+/*     17. Projects     */
+/**********************/
+#projects {
+  background-color: #dff7fb78;
+}
+
+#projects .card {
+  padding: 0;
+  background-color: #fff;
+}
+
+#projects .card-body {
+  padding: 2rem;
+}
+
+#projects img {
+  max-width: 100%;
 }
 
 /**********************************/

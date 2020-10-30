@@ -52,8 +52,6 @@ export default function Navigation() {
             <a
               className="nav-link"
               href="/projects"
-              target="_blank"
-              rel="noopener"
               title="Link zur Precelerator Projektwand"
             >
               Projektwand

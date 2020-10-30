@@ -29,8 +29,15 @@ export default function Projects() {
           Du hast eine Idee, aber dir fehlt das Team zur Realisierung? Stelle
           dein Projekt vor und erreiche Studierende aus der Region!
         </p>
+        <a
+          className="btn-solid-lg"
+          href="https://forms.gle/uDkAuU7BQiZzzecq6"
+          target="_blank"
+        >
+          Projekt einreichen
+        </a>
       </TextContainer>
-      <div id="services" className="ccards-1">
+      <div id="projects" className="cards-1">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 flex-container">
