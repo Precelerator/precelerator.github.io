@@ -23,12 +23,13 @@ export default function Projects() {
       <TextContainer>
         <p>
           Ohne Idee, aber motiviert? Stöbere durch die unten vorgestellten
-          Projekte und finde deine Traumprojekt!
+          Projekte und finde ein Team, das deine Skills braucht!
         </p>
         <p>
           Du hast eine Idee, aber dir fehlt das Team zur Realisierung? Stelle
-          dein Projekt vor und erreiche Studierende aus der Region!
+          dein Projekt vor und erreiche andere Studierende an der HM!
         </p>
+        <p>Klick auf ein Projekt, um mehr Details zum Projekt zu erhalten.</p>
         <a
           className="btn-solid-lg"
           href="https://forms.gle/uDkAuU7BQiZzzecq6"

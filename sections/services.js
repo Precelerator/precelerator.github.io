@@ -75,8 +75,8 @@ export default function Services() {
                         regularText="rund um Entrepreneurship und Entrepreneurial Thinking"
                       />
                       <ListEntry
-                        strongText="Technische Beratung"
-                        regularText="zur Umsetzung von Prototypen (egal ob digital oder analog)"
+                        strongText="Workshops & Formate"
+                        regularText="um deine Ideen gezielt weiterzuentwickeln"
                       />
                     </ul>
                   </Card>
@@ -84,7 +84,7 @@ export default function Services() {
                 <SwiperSlide>
                   <Card img="/images/services-icon-3.svg" title="CREATE.">
                     <p>
-                      Im Precelerator kannst du deine erworbenen Mtehoden und
+                      Im Precelerator kannst du deine erworbenen Methoden und
                       Kompetenzen auf eigene Ideen, unternehmerische Vorhaben
                       und Geschäftsmodelle übertragen.
                     </p>
@@ -93,9 +93,10 @@ export default function Services() {
                         strongText="Co-Working Spaces"
                         regularText="zum Arbeiten an deiner Idee"
                       />
+
                       <ListEntry
-                        strongText="Workshops & Formate"
-                        regularText="um deine Ideen gezielt weiterzuentwickeln"
+                        strongText="Technische Beratung"
+                        regularText="zur Umsetzung von Prototypen (egal ob digital oder analog)"
                       />
                     </ul>
                   </Card>
@@ -110,11 +111,11 @@ export default function Services() {
                     <ul className="list-unstyled li-space-lg">
                       <ListEntry
                         strongText="Werkzeuge & Werkstatt-Maschinen"
-                        regularText="zum Ausprobieren, Lehrveranstaltungen und Demos"
+                        regularText="Holz-, Metall-, Elektrowerkstatt"
                       />
                       <ListEntry
-                        strongText="Modernste Ausstattung:"
-                        regularText="3D-Drucker, High-End Rechner, Filmstudio, VR-Brillen, etc."
+                        strongText="Modernste IT-Ausstattung"
+                        regularText="High-End Rechner, Filmstudio, VR-Brillen, etc."
                       />
                     </ul>
                   </Card>
@@ -128,7 +129,7 @@ export default function Services() {
                     <ul className="list-unstyled li-space-lg">
                       <ListEntry
                         strongText="Gadgets"
-                        regularText="zum Ausprobieren, Lehrveranstaltungen und Demos"
+                        regularText="zum Ausprobieren, Spielen und Experimentieren"
                       />
                       <ListEntry
                         strongText="Spielerische Formate"
