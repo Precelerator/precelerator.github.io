@@ -1401,9 +1401,9 @@ button {
 }
 
 /*********************/
-/*     14. About     */
+/*     14. Team     */
 /*********************/
-#about {
+#team {
   background-color: #ecf0f5c2;
 }
 
@@ -2163,12 +2163,12 @@ a:hover.back-to-top {
   }
   /* end of testimonials */
 
-  /* About */
+  /* Team */
   .basic-4 .team-member {
     margin-right: 2.25rem;
     margin-left: 2.25rem;
   }
-  /* end of about */
+  /* end of team */
 
   /* Contact */
   .form-2 .map-responsive {

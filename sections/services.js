@@ -34,6 +34,9 @@ export default function Services() {
                   320: {
                     slidesPerView: 1,
                   },
+                  750: {
+                    slidesPerView: 2,
+                  },
                   1200: {
                     slidesPerView: 3,
                   },
