@@ -1,8 +1,10 @@
 export default function Navigation() {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       {/* Text Logo - Use this if you don't have a graphic logo */}
-      <a className="navbar-brand logo-text page-scroll" href="/">Precelerator</a>
+      <a className="navbar-brand logo-text page-scroll" href="/">
+        Precelerator
+      </a>
 
       {/* Image Logo */}
       {/* <a className="navbar-brand logo-image" href="index.html"><img src="/images/logo.svg" alt="alternative"></a> */}
@@ -25,19 +27,44 @@ export default function Navigation() {
       <div className="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#header">Home <span className="sr-only">(current)</span></a>
+            <a className="nav-link page-scroll" href="#header">
+              Home <span className="sr-only">(current)</span>
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#services">Angebote</a>
+            <a className="nav-link page-scroll" href="#services">
+              Angebote
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#about">Team</a>
+            <a className="nav-link page-scroll" href="#about">
+              Team
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#contact">Kontakt</a>
+            <a className="nav-link page-scroll" href="#contact">
+              Kontakt
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="https://precelerator.github.io/blog" target="_blank" rel="noopener" title="Link zum Precelerator Blog">
+            <a
+              className="nav-link"
+              href="/projects"
+              target="_blank"
+              rel="noopener"
+              title="Link zur Precelerator Projektwand"
+            >
+              Projektwand
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="nav-link"
+              href="https://precelerator.github.io/blog"
+              target="_blank"
+              rel="noopener"
+              title="Link zum Precelerator Blog"
+            >
               Precelerator Blog
             </a>
           </li>
@@ -58,5 +85,5 @@ export default function Navigation() {
         </span> */}
       </div>
     </nav>
-    )
+  );
 }
