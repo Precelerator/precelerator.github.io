@@ -16,5 +16,5 @@ export default function ProjectCard({ children, category, title, id }) {
 
 const getImageLink = (category) => {
   let base = '/images/p-';
-  return `${base}${category.replace(' ', '-')}.jpg`;
+  return `${base}${category.toLowerCase().replace(' ', '-')}.jpg`;
 };
