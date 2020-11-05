@@ -1589,7 +1589,49 @@ button {
 }
 
 #projects img {
-  max-width: 100%;
+  width: 100%;
+}
+
+#projects .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#projects .select-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#projects select {
+  margin-bottom: 2rem;
+  width: auto;
+}
+
+#projects .ex-header {
+  padding-bottom: 2rem;
+}
+
+#projects .ex-basic-2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+#projects .cards-1 {
+  background-color: rgba(223, 247, 251, 0.47);
+  padding-top: 1.625rem;
+}
+
+#projects .card {
+  display: flex;
+  cursor: pointer;
+}
+
+#projects .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /**********************************/
