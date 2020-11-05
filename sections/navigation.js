@@ -37,7 +37,7 @@ export default function Navigation() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#about">
+            <a className="nav-link page-scroll" href="#team">
               Team
             </a>
           </li>
