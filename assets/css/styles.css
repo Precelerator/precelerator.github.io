@@ -870,6 +870,12 @@ button {
   flex-wrap: wrap;
 }
 
+#services .alert {
+  background-color: #dff7fb;
+  border-color: #00bfd8;
+  font-size: 1rem;
+}
+
 .cards-1 .card .list-unstyled {
   text-align: left;
 }

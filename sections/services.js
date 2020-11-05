@@ -13,6 +13,18 @@ export default function Services() {
           <div className="row">
             <div className="col-lg-12">
               <h2>Angebote</h2>
+              <div className="alert alert-primary" role="alert">
+                Coming soon! Das Launch-Event des Precelerators findet am 08.12.
+                online statt. Sichere dir jetzt dein Ticket auf&nbsp;
+                <a
+                  href="https://www.eventbrite.de/e/precelerator-kick-off-event-abend-der-kreativitat-und-der-prototypen-tickets-127887339475"
+                  className="alert-link"
+                  target="_blank"
+                >
+                  Eventbrite
+                </a>
+                !
+              </div>
               <p className="p-heading p-large">
                 Mit dem Precelerator schafft die Hochschule und das SCE,
                 gefördert durch das Bundesministerium für Bildung und Forschung,
