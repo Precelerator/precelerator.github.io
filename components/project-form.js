@@ -12,34 +12,73 @@ export default class ProjectForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <form
-        onSubmit={this.submitForm}
-        action="https://formspree.io/f/mwkwbyov"
-        method="POST"
-      >
-        <label>Name:</label>
-        <input type="email" name="email" />
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>
-          Nachricht/ Motivation (warum du an diesem Projekt teilnehmen willst
-          bzw. wie du dich einbringen kannst):
-        </label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? (
-          <p>
-            Danke für dein Interesse! Das Team wird sich in Kürze bei dir melden
-          </p>
-        ) : (
-          <button>Senden</button>
-        )}
-        {status === "ERROR" && (
-          <p>
-            Es ist ein Fehler aufgetreten. Bitte kontaktiere
-            fabio.maienschein@sce.de.
-          </p>
-        )}
-      </form>
+      <>
+        <h4>Kontakt zum Projekt aufnehmen</h4>
+        <p>
+          Nutze das folgende Formular, um Kontakt zum Team hinter dem
+          ausgeschriebenen Projekt aufzunehmen. Füge eine ausführliche
+          Beschreibung hinzu, warum das Projekt für dich interessant sein könnte
+          und in welchen Bereichen du dich engagieren könntest!
+        </p>
+        <form
+          onSubmit={this.submitForm}
+          action="https://formspree.io/f/mwkwbyov"
+          data-toggle="validator"
+          data-focus="false"
+          method="POST"
+        >
+          <div className="form-group">
+            <label>Name:</label>
+            <input type="email" name="email" className="form-control-input" />
+          </div>
+          <div className="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" className="form-control-input" />
+          </div>
+          <div className="form-group">
+            <label>Nachricht/ Motivation:</label>
+            <textarea
+              className="form-control-textarea"
+              id="message"
+              required
+            ></textarea>
+          </div>
+          {status === "SUCCESS" ? (
+            <p>
+              Danke für dein Interesse! Das Team wird sich in Kürze bei dir
+              melden
+            </p>
+          ) : (
+            <div>
+              <div className="form-group checkbox">
+                <input
+                  type="checkbox"
+                  id="cterms"
+                  value="Agreed-to-Terms"
+                  required
+                />
+                Ich habe die &nbsp;
+                <a href="/privacy-policy">Datenschutzerklärung</a> sowie den
+                &nbsp;
+                <a href="/disclaimer">Haftungsausschluss</a> zur Kenntnis
+                genommen und stimme diesen zu.
+                <div className="help-block with-errors"></div>
+              </div>
+              <div className="form-group">
+                <button type="submit" className="form-control-submit-button">
+                  Senden
+                </button>
+              </div>
+            </div>
+          )}
+          {status === "ERROR" && (
+            <p>
+              Es ist ein Fehler aufgetreten. Bitte kontaktiere
+              fabio.maienschein@sce.de.
+            </p>
+          )}
+        </form>
+      </>
     );
   }
 
