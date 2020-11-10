@@ -29,7 +29,7 @@ export default class ProjectForm extends React.Component {
         >
           <div className="form-group">
             <label>Name:</label>
-            <input type="email" name="email" className="form-control-input" />
+            <input type="text" name="name" className="form-control-input" />
           </div>
           <div className="form-group">
             <label>Email:</label>
@@ -40,20 +40,24 @@ export default class ProjectForm extends React.Component {
             <textarea
               className="form-control-textarea"
               id="message"
+              name="message"
               required
             ></textarea>
           </div>
           {status === "SUCCESS" ? (
             <p>
-              Danke für dein Interesse! Das Team wird sich in Kürze bei dir
-              melden
+              <b>
+                Danke für dein Interesse! Das Precelerator-Team wird sich in
+                Kürze bei dir melden.
+              </b>
             </p>
           ) : (
-            <div>
+            <>
               <div className="form-group checkbox">
                 <input
                   type="checkbox"
-                  id="cterms"
+                  id="terms"
+                  id="terms"
                   value="Agreed-to-Terms"
                   required
                 />
@@ -64,12 +68,13 @@ export default class ProjectForm extends React.Component {
                 genommen und stimme diesen zu.
                 <div className="help-block with-errors"></div>
               </div>
+              <input type="hidden" name="_language" value="de" />
               <div className="form-group">
                 <button type="submit" className="form-control-submit-button">
-                  Senden
+                  ABSENDEN
                 </button>
               </div>
-            </div>
+            </>
           )}
           {status === "ERROR" && (
             <p>

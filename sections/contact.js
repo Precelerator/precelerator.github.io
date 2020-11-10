@@ -49,7 +49,7 @@ export default function Contact() {
           </div>
           {/* end of row */}
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 d-flex align-items-center">
               <a
                 href="https://www.google.com/maps/place/Lothstra%C3%9Fe+21,+80797+M%C3%BCnchen/@48.1563229,11.5547461,17z"
                 target="_blank"
@@ -68,62 +68,78 @@ export default function Contact() {
                 method="POST"
               >
                 <div className="form-group">
+                  <label htmlFor="name">Name</label>
                   <input
                     type="text"
                     className="form-control-input"
-                    id="cname"
+                    id="name"
+                    name="name"
                     required
                   />
-                  <label className="label-control" htmlFor="cname">
-                    Name
-                  </label>
                   <div className="help-block with-errors"></div>
                 </div>
                 <div className="form-group">
+                  <label htmlFor="email">E-Mail</label>
                   <input
                     type="email"
                     className="form-control-input"
-                    id="cemail"
+                    id="email"
+                    name="email"
                     required
                   />
-                  <label className="label-control" htmlFor="cemail">
-                    E-Mail
-                  </label>
                   <div className="help-block with-errors"></div>
                 </div>
                 <div className="form-group">
+                  <label htmlFor="message">Nachricht</label>
                   <textarea
                     className="form-control-textarea"
-                    id="cmessage"
+                    id="message"
+                    name="message"
                     required
                   ></textarea>
-                  <label className="label-control" htmlFor="cmessage">
-                    Nachricht
-                  </label>
                   <div className="help-block with-errors"></div>
                 </div>
-                <div className="form-group checkbox">
-                  <input
-                    type="checkbox"
-                    id="cterms"
-                    value="Agreed-to-Terms"
-                    required
-                  />
-                  Ich habe die &nbsp;
-                  <a href="/privacy-policy">Datenschutzerklärung</a> sowie den
-                  &nbsp;
-                  <a href="/disclaimer">Haftungsausschluss</a> zur Kenntnis
-                  genommen und stimme diesen zu.
-                  <div className="help-block with-errors"></div>
-                </div>
-                <div className="form-group">
-                  <button type="submit" className="form-control-submit-button">
-                    ABSENDEN
-                  </button>
-                </div>
-                <div className="form-message">
-                  <div id="cmsgSubmit" className="h3 text-center hidden"></div>
-                </div>
+                {status === "SUCCESS" ? (
+                  <p>
+                    <b>
+                      Danke für dein Interesse! Das Precelerator-Team wird sich
+                      in Kürze bei dir melden.
+                    </b>
+                  </p>
+                ) : (
+                  <>
+                    <div className="form-group checkbox">
+                      <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        value="Agreed-to-Terms"
+                        required
+                      />
+                      Ich habe die &nbsp;
+                      <a href="/privacy-policy">Datenschutzerklärung</a> sowie
+                      den &nbsp;
+                      <a href="/disclaimer">Haftungsausschluss</a> zur Kenntnis
+                      genommen und stimme diesen zu.
+                      <div className="help-block with-errors"></div>
+                    </div>
+                    <input type="hidden" name="_language" value="de" />
+                    <div className="form-group">
+                      <button
+                        type="submit"
+                        className="form-control-submit-button"
+                      >
+                        ABSENDEN
+                      </button>
+                    </div>
+                  </>
+                )}
+                {status === "ERROR" && (
+                  <p>
+                    Es ist ein Fehler aufgetreten. Bitte kontaktiere
+                    fabio.maienschein@sce.de.
+                  </p>
+                )}
               </form>
               {/* end of contact form */}
             </div>
