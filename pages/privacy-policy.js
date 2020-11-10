@@ -1,7 +1,7 @@
-import Layout from "../components/layout";
-import SiteHeader from "../components/site-header";
-import TextContainer from "../components/text-container";
-import Breadcrumbs from "../components/breadcrumbs";
+import Layout from '../components/layout';
+import SiteHeader from '../components/site-header';
+import TextContainer from '../components/text-container';
+import Breadcrumbs from '../components/breadcrumbs';
 
 export default function PrivacyPolicy() {
   return (

@@ -1,5 +1,17 @@
-export default function Contact() {
-  return (
+import React from "react";
+
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
+
+  render() {
+    const { status } = this.state;
+    return (
     <>
       <div id="contact" className="form-2">
         <div className="container">
@@ -61,6 +73,7 @@ export default function Contact() {
             <div className="col-lg-6">
               {/* Contact form */}
               <form
+                onSubmit={this.submitForm}
                 id="contactform"
                 data-toggle="validator"
                 data-focus="false"
@@ -150,5 +163,25 @@ export default function Contact() {
         {/* end of container */}
       </div>
     </>
-  );
+    );
+  }
+
+submitForm(ev) {
+  ev.preventDefault();
+  const form = ev.target;
+  const data = new FormData(form);
+  const xhr = new XMLHttpRequest();
+  xhr.open(form.method, form.action);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      form.reset();
+      this.setState({ status: "SUCCESS" });
+    } else {
+      this.setState({ status: "ERROR" });
+    }
+  };
+  xhr.send(data);
+}
 }
