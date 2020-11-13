@@ -60,7 +60,7 @@ export default function Navigation() {
           <li className="nav-item">
             <a
               className="nav-link"
-              href="https://precelerator.github.io/blog"
+              href="https://precelerator.de/blog"
               target="_blank"
               rel="noopener"
               title="Link zum Precelerator Blog"

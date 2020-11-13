@@ -22,7 +22,7 @@ export default function Footer() {
                       Unser Blog:
                       <a
                         className="turquoise"
-                        href="https://precelerator.github.io/blog"
+                        href="https://precelerator.de/blog"
                       >
                         {" "}
                         Precelerator Blog
