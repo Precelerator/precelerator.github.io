@@ -15,8 +15,8 @@ function zzglCookieTextDe(){setTimeout(function(){let isactive = document.queryS
     var privacyLinkText = 'Datenschutz';
     var imprintLinkText = 'Impressum';
     var agbLinkText = 'AGB';
-    var privacyLink = 'https:\/\/precelerator.github.io\/privacy-policy';
-    var imprintLink = 'https:\/\/precelerator.github.io\/impressum';
+    var privacyLink = 'https:\/\/precelerator.de\/privacy-policy';
+    var imprintLink = 'https:\/\/precelerator.de\/impressum';
     var agbLink = '';
     if(privacyLink!=''){
         footerlink="<a href='"+privacyLink+"' title='"+privacyLinkText+"'>"+privacyLinkText+"</a>";
@@ -38,8 +38,8 @@ function zzglCookieTextDe(){setTimeout(function(){let isactive = document.queryS
     var privacyLinkText = 'Privacy Policy';
     var imprintLinkText = 'Imprint';
     var agbLinkText = 'Terms Conditions';
-    var privacyLink = 'https:\/\/precelerator.github.io\/privacy-policy';
-    var imprintLink = 'https:\/\/precelerator.github.io\/impressum';
+    var privacyLink = 'https:\/\/precelerator.de\/privacy-policy';
+    var imprintLink = 'https:\/\/precelerator.de\/impressum';
     var agbLink = '';
     if(privacyLink!=''){
         footerlink="<a href='"+privacyLink+"' title='"+privacyLinkText+"'>"+privacyLinkText+"</a>";
@@ -168,7 +168,7 @@ var klaroConfig = {
     htmlTexts: true,
     cookieDomain: '.'+domainName,
     cookieExpiresAfterDays: 7,
-    privacyPolicy: 'https:\/\/precelerator.github.io\/privacy-policy',
+    privacyPolicy: 'https:\/\/precelerator.de\/privacy-policy',
     default: false,
     mustConsent: true,
     acceptAll: true,
