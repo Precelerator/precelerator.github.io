@@ -1599,7 +1599,7 @@ button {
 
 #projects select {
   margin-bottom: 2rem;
-  width: auto;
+  width: 150px;
 }
 
 #projects .ex-header {
