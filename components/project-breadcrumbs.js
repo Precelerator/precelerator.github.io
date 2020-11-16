@@ -7,7 +7,7 @@ export default function ProjectBreadcrumbs({ projectName }) {
             <div className="breadcrumbs">
               <a href="/">Home</a>
               <i className="fa fa-angle-double-right"></i>
-              <a href="/projects">Projects</a>
+              <a href="/projects">Projektwand</a>
               <i className="fa fa-angle-double-right"></i>
               <span>{projectName}</span>
             </div>
