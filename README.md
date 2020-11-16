@@ -1,30 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Precelerator Landing Page
+
+Die Landing Page des Precelerators ist als [Next.js](https://nextjs.org/) Anwendung unter Nutzung von [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) umgesetzt.
 
 ## Getting Started
 
-First, run the development server:
+Um die Webseite weiterzuentwickeln, klone zuerst das Projekt (über die Konsole mit Git oder bequem per GitHub Desktop).
+
+Navigiere in den Projekt Ordner und installiere anschließend die Abhängigkeiten via [npm](https://nodejs.org/en/)  ```bash npm install ```.
+
+Danach startest du den lokalen Dev Server via
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Öffne [http://localhost:3000](http://localhost:3000) im Browser, um die Anwendung zu sehen.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Ändere Inhalte in `pages/index.js` (bzw. die Sections und Components innerhalb der index.js). Per Hot Reload sollten deine Änderungen direkt sichtbar sein.
 
-## Learn More
+## Mehr erfahren
 
-To learn more about Next.js, take a look at the following resources:
+Um mehr über next.js zu erfahren, wirf einen Blick auf die folgenden Ressourcen:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Next.js Dokumentation.
+- [Learn Next.js](https://nextjs.org/learn) - interaktives Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## DevOps
 
-## Deploy on Vercel
+Die Seite wird via GitHub Actions gebuildet, als statische Seite exportiert und anschließend auf GitHub Pages gehostet.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Kontakt
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Probleme mit der Website? Hinterlasse uns einen Issue oder Pull Request oder schreib uns an precelerator@sce.de.
