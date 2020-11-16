@@ -6,7 +6,7 @@ Die Landing Page des Precelerators ist als [Next.js](https://nextjs.org/) Anwend
 
 Um die Webseite weiterzuentwickeln, klone zuerst das Projekt (über die Konsole mit Git oder bequem per GitHub Desktop).
 
-Navigiere in den Projekt Ordner und installiere anschließend die Abhängigkeiten via [npm](https://nodejs.org/en/)  ```bash npm install ```.
+Navigiere in den Projekt Ordner und installiere anschließend die Abhängigkeiten via [npm](https://nodejs.org/en/)  ``` npm install ```.
 
 Danach startest du den lokalen Dev Server via
 
