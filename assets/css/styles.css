@@ -1738,10 +1738,6 @@ a:hover.back-to-top {
 
 /* Max-width 767 px */
 @media (max-width: 768px) {
-  .header .header-content {
-    padding-top: 6rem;
-  }
-
   .header .col-lg-7 h2 {
     font-size: 1.8rem;
   }
@@ -1786,10 +1782,6 @@ a:hover.back-to-top {
   /* end of general styles */
 
   /* Header */
-  .header .header-content {
-    padding-top: 10.5rem;
-  }
-
   .header h1 {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -2003,7 +1995,6 @@ a:hover.back-to-top {
   }
 
   .header .header-content {
-    padding-top: 11.5rem;
     text-align: left;
   }
 
@@ -2156,10 +2147,6 @@ a:hover.back-to-top {
   /* end of general styles */
 
   /* Header */
-  .header .header-content {
-    padding-top: 12.5rem;
-  }
-
   .header .text-container {
     margin-top: 5.375rem;
     margin-left: 1rem;
