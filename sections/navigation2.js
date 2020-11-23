@@ -4,12 +4,14 @@ export default function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       {/* Text Logo - Use this if you don't have a graphic logo */}
-      <a className="navbar-brand logo-text page-scroll" href="/">
+      {/* <a className="navbar-brand logo-text page-scroll" href="/">
         Precelerator
-      </a>
+      </a> */}
 
       {/* Image Logo */}
-      {/* <a className="navbar-brand logo-image" href="index.html"><img src="/images/logo.svg" alt="alternative"></a> */}
+      <a className="navbar-brand logo-image" href="/">
+        <img src="/images/logo-with-claim.svg" alt="Precelerator Logo" />
+      </a>
 
       {/* Mobile Menu Toggle Button */}
       <button
