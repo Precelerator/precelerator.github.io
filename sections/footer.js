@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="col-md-4">
               <div className="footer-col">
                 <h4>Precelerator</h4>
-                <p>Der Community-Space an der HM.</p>
+                <p>Der Community Space an der HM.</p>
                 <img src="/images/logos-blog.png" className="logos-small"></img>
               </div>
             </div>

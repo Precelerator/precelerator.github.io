@@ -7,7 +7,7 @@ export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
-        <title>Precelerator - Der Community-Space am SCE</title>
+        <title>Precelerator - Der Community Space am SCE</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
         {/* website link */}
         <meta
           property="og:title"
-          content="Precelerator - Der Community-Space am SCE"
+          content="Precelerator - Der Community Space am SCE"
         />
         {/* title shown in the actual shared post */}
         <meta

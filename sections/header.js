@@ -12,11 +12,11 @@ export default function Header() {
                   </h2>
                   <br />
                   <h1>
-                    Der Community-Space für Entrepreneurship & Prototyping
+                    Der Community Space für Entrepreneurship & Prototyping
                   </h1>
 
                   <p className="p-large">
-                    Der <strong>Precelerator</strong> ist der Community-Space
+                    Der <strong>Precelerator</strong> ist der Community Space
                     für Innovation und Entrepreneurship, Prototyping und Neue
                     Technologien für alle Angehörigen der Hochschule München.
                   </p>
