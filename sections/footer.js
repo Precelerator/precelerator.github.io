@@ -89,6 +89,16 @@ export default function Footer() {
                 </span>
                 <span className="fa-stack">
                   <a
+                    href="https://twitter.com/StraschegCenter"
+                    target="_blank"
+                    title="SCE Twitter"
+                  >
+                    <i className="fas fa-circle fa-stack-2x"></i>
+                    <i className="fab fa-twitter fa-stack-1x"></i>
+                  </a>
+                </span>
+                <span className="fa-stack">
+                  <a
                     href="https://www.youtube.com/channel/UCTt1uc9dSzAyLasmcCy0H5Q"
                     target="_blank"
                     title="SCE Youtube"
