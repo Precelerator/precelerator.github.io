@@ -662,7 +662,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -1877,9 +1877,12 @@ a:hover.back-to-top {
 @media (min-width: 992px) {
   /* Navigation */
   .navbar-custom {
-    padding: 2.125rem 1.5rem 2.125rem 2rem;
+    padding: 2.125rem 0 2.125rem 15px;
     box-shadow: none;
     background: transparent;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar-custom .navbar-nav {
@@ -2132,7 +2135,10 @@ a:hover.back-to-top {
 @media (min-width: 1200px) {
   /* Navigation */
   .navbar-custom {
-    padding: 2.125rem 5rem 2.125rem 5rem;
+    padding: 2.125rem 0 2.125rem 31px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar-custom.top-nav-collapse {
