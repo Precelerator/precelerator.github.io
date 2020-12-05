@@ -34,13 +34,12 @@ export default function Navigation() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#services">
-              Angebote
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link page-scroll" href="#team">
-              Team
+            <a
+              className="nav-link"
+              href="/events"
+              title="Link zu den Precelerator Events"
+            >
+              Events
             </a>
           </li>
           <li className="nav-item">
@@ -64,6 +63,11 @@ export default function Navigation() {
               title="Link zum Precelerator Blog"
             >
               Precelerator Blog
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link page-scroll" href="#contact">
+              Kontakt
             </a>
           </li>
         </ul>

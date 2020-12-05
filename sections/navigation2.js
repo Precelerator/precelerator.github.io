@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -36,18 +36,12 @@ export default function Navigation() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
-              Angebote
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              Team
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              Kontakt
+            <a
+              className="nav-link"
+              href="/events"
+              title="Link zu den Precelerator Events"
+            >
+              Events
             </a>
           </li>
           <li className="nav-item">
