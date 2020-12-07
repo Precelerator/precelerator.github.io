@@ -43,11 +43,6 @@ export default function Navigation() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link page-scroll" href="#contact">
-              Kontakt
-            </a>
-          </li>
-          <li className="nav-item">
             <a
               className="nav-link"
               href="/projects"
