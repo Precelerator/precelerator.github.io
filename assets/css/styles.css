@@ -649,6 +649,10 @@ input[type='checkbox'] {
   }
 }
 
+.eventImage {
+  max-height: 200px;
+}
+
 /*************************/
 /*     02. Preloader     */
 /*************************/
