@@ -629,6 +629,26 @@ input[type='checkbox'] {
   font: 16px Helvetica, Arial, sans-serif;
 }
 
+.newsletter {
+  margin-top: 4rem;
+}
+
+#newsletterFrame {
+  height: 1000px;
+}
+
+@media (max-width: 500px) {
+  #newsletterFrame {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 350px) {
+  #newsletterFrame {
+    height: 1400px;
+  }
+}
+
 /*************************/
 /*     02. Preloader     */
 /*************************/
