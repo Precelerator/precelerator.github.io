@@ -6,7 +6,7 @@ import Breadcrumbs from '../components/breadcrumbs';
 export default function Impressum() {
   return (
     <Layout home={false}>
-      {/* <SiteHeader heading="Newsletter"></SiteHeader> */}
+      <SiteHeader heading="Newsletter"></SiteHeader>
       <TextContainer>
         <h3 class="newsletter">Anmeldung zum Newsletter</h3>
         <p>
