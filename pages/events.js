@@ -1,17 +1,17 @@
-import Layout from "../components/layout";
-import SiteHeader from "../components/site-header";
-import TextContainer from "../components/text-container";
-import EventCard from "../components/event-card";
-import Breadcrumbs from "../components/breadcrumbs";
+import Layout from '../components/layout';
+import SiteHeader from '../components/site-header';
+import TextContainer from '../components/text-container';
+import EventCard from '../components/event-card';
+import Breadcrumbs from '../components/breadcrumbs';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function Events() {
   const [events, setEvents] = useState([]);
 
   useEffect(function effectFunction() {
     fetch(
-      "https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg=="
+      'https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg==',
     )
       .then((response) => response.json())
       .then((eventList) => setEvents(eventList));
@@ -50,28 +50,25 @@ export default function Events() {
             <div className="col-lg-12">
               <div className="flex-container">
                 {events.map((e) => (
-                  <EventCard title={e.titel} key={events.indexOf(e) + 1}>
-                    <p>
-                      {e.datum} {e.uhrzeit}
-                    </p>
-                    <p className="card-text">{e.beschreibung}</p>
-                    <a href="#">{e.zoomLink}</a>
+                  <EventCard
+                    title={e.titel}
+                    date={e.datum}
+                    time={e.uhrzeit}
+                    key={events.indexOf(e) + 1}
+                  >
+                    <div>
+                      {e.beschreibung.split('#').map((a) => (
+                        <p className="card-text">{a}</p>
+                      ))}
+                    </div>
+                    <a
+                      className="btn-solid-lg"
+                      href={e.zoomLink}
+                      target="_blank"
+                    >
+                      Zur Anmeldung (Zoom)
+                    </a>
                   </EventCard>
-                  // <ProjectCard
-                  //   category={p.kategorie}
-                  //   title={p.projektname}
-                  //   id={projects.indexOf(p) + 1}
-                  //   key={projects.indexOf(p)}
-                  // >
-                  //   <p className="card-text">{p.kurzbeschreibung}</p>
-                  //   <p>
-                  //     Gesucht: <b>{p.suchtNach}</b>
-                  //   </p>
-                  //   <div className="d-flex justify-content-between align-items-center">
-                  //     <small className="text-muted">{p.kategorie}</small>
-                  //     <small className="text-muted">{p.onlineSeit}</small>
-                  //   </div>
-                  // </ProjectCard>
                 ))}
               </div>
             </div>
