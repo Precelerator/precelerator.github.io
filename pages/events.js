@@ -22,18 +22,6 @@ export default function Events() {
       <div id="projects">
         <SiteHeader heading="Anstehende Veranstaltungen"></SiteHeader>
         <TextContainer>
-          <div className="alert alert-primary" role="alert">
-            Coming soon! Das Launch-Event des Precelerators findet am 08.12.
-            online statt. Sichere dir jetzt dein Ticket auf&nbsp;
-            <a
-              href="https://www.eventbrite.de/e/precelerator-kick-off-event-abend-der-kreativitat-und-der-prototypen-tickets-127887339475"
-              className="alert-link"
-              target="_blank"
-            >
-              Eventbrite
-            </a>
-            !
-          </div>
           <p>
             Hier findest du die anstehenden Workshops und Events des
             Precelerators. Eine Anmeldung ist nicht nötig, tritt einfach zur
