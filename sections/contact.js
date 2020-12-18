@@ -29,7 +29,7 @@ export default class Contact extends React.Component {
                   </li>
                   <li>
                     <i className="fas fa-check"></i>Du suchst motivierte
-                    Mitstreiter für deine Idee?
+                    MitstreiterInnen für deine Idee?
                   </li>
                   <li>
                     <i className="fas fa-check"></i>Du möchtest einfach mal

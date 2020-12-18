@@ -36,7 +36,7 @@ export default function Footer() {
                       Interessierte:
                       <a className="turquoise" href="/projects">
                         {' '}
-                        Mitstreiter gesucht!
+                        MitstreiterInnen gesucht!
                       </a>
                     </div>
                   </li>
