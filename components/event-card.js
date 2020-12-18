@@ -27,7 +27,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('make')) {
     return `${base}-make.jpg`;
   }
-  if (title.toLowerCase().includes('coding')) {
+  if (title.toLowerCase().includes('digital')) {
     return `${base}-digital.jpg`;
   }
   if (title.toLowerCase().includes('personality')) {
