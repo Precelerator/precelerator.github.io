@@ -34,12 +34,19 @@ export default function Footer() {
                     <div className="media-body">
                       Unsere Matching-Plattform für Ideengeber und
                       Interessierte:
-                      <a
-                        className="turquoise"
-                        href="https://mitstreiter-gesucht.precelerator.vercel.app/"
-                      >
+                      <a className="turquoise" href="/projects">
                         {' '}
-                        Mitstreiter gesucht!
+                        MitstreiterInnen gesucht!
+                      </a>
+                    </div>
+                  </li>
+                  <li className="media">
+                    <i className="fas fa-square"></i>
+                    <div className="media-body">
+                      Unser Newsletter rund um den Precelerator
+                      <a className="turquoise" href="/newsletter">
+                        {' '}
+                        Newsletter
                       </a>
                     </div>
                   </li>

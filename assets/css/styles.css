@@ -52,15 +52,15 @@ html {
 body,
 p {
   color: #626262;
-  font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+  font: 400 0.875rem/1.375rem 'Raleway', sans-serif;
 }
 
 .p-large {
-  font: 400 1rem/1.5rem "Raleway", sans-serif;
+  font: 400 1rem/1.5rem 'Raleway', sans-serif;
 }
 
 .p-small {
-  font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+  font: 400 0.75rem/1.25rem 'Raleway', sans-serif;
 }
 
 .p-heading {
@@ -77,32 +77,32 @@ p {
 
 h1 {
   color: #393939;
-  font: 700 3rem/3.5rem "Raleway", sans-serif;
+  font: 700 3rem/3.5rem 'Raleway', sans-serif;
 }
 
 h2 {
   color: #393939;
-  font: 700 2.25rem/2.75rem "Raleway", sans-serif;
+  font: 700 2.25rem/2.75rem 'Raleway', sans-serif;
 }
 
 h3 {
   color: #393939;
-  font: 700 1.75rem/2rem "Raleway", sans-serif;
+  font: 700 1.75rem/2rem 'Raleway', sans-serif;
 }
 
 h4 {
   color: #393939;
-  font: 700 1.375rem/1.875rem "Raleway", sans-serif;
+  font: 700 1.375rem/1.875rem 'Raleway', sans-serif;
 }
 
 h5 {
   color: #393939;
-  font: 700 1.125rem/1.625rem "Raleway", sans-serif;
+  font: 700 1.125rem/1.625rem 'Raleway', sans-serif;
 }
 
 h6 {
   color: #393939;
-  font: 700 1rem/1.5rem "Raleway", sans-serif;
+  font: 700 1rem/1.5rem 'Raleway', sans-serif;
 }
 
 a {
@@ -124,11 +124,11 @@ a.white {
 }
 
 .testimonial-text {
-  font: italic 400 1rem/1.5rem "Raleway", sans-serif;
+  font: italic 400 1rem/1.5rem 'Raleway', sans-serif;
 }
 
 .testimonial-author {
-  font: 700 1rem/1.5rem "Raleway", sans-serif;
+  font: 700 1rem/1.5rem 'Raleway', sans-serif;
 }
 
 .turquoise {
@@ -142,7 +142,7 @@ a.white {
   border-radius: 2rem;
   background-color: #00bfd8;
   color: #fff;
-  font: 700 0.75rem/0 "Raleway", sans-serif;
+  font: 700 0.75rem/0 'Raleway', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -160,7 +160,7 @@ a.white {
   border-radius: 2rem;
   background-color: #00bfd8;
   color: #fff;
-  font: 700 0.75rem/0 "Raleway", sans-serif;
+  font: 700 0.75rem/0 'Raleway', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -178,7 +178,7 @@ a.white {
   border-radius: 2rem;
   background-color: transparent;
   color: #00bfd8;
-  font: 700 0.75rem/0 "Raleway", sans-serif;
+  font: 700 0.75rem/0 'Raleway', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -196,7 +196,7 @@ a.white {
   border-radius: 2rem;
   background-color: transparent;
   color: #00bfd8;
-  font: 700 0.75rem/0 "Raleway", sans-serif;
+  font: 700 0.75rem/0 'Raleway', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -214,7 +214,7 @@ a.white {
   border-radius: 2rem;
   background-color: transparent;
   color: #00bfd8;
-  font: 700 0.625rem/0 "Raleway", sans-serif;
+  font: 700 0.625rem/0 'Raleway', sans-serif;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -244,7 +244,7 @@ a.white {
   left: 1.375rem;
   color: #626262;
   opacity: 1;
-  font: 400 0.875rem/1.375rem "Raleway", sans-serif;
+  font: 400 0.875rem/1.375rem 'Raleway', sans-serif;
   cursor: text;
   transition: all 0.2s ease;
 }
@@ -278,7 +278,7 @@ a.white {
   border-radius: 0.25rem;
   background-color: #fff;
   color: #626262;
-  font: 400 0.875rem/1.875rem "Raleway", sans-serif;
+  font: 400 0.875rem/1.875rem 'Raleway', sans-serif;
   transition: all 0.2s;
   -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
@@ -313,7 +313,7 @@ select {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background-image: url("/images/down-arrow.png");
+  background-image: url('/images/down-arrow.png');
   background-position: 96% 50%;
   background-repeat: no-repeat;
   outline: none;
@@ -333,7 +333,7 @@ select::-ms-expand {
   border-radius: 0.25rem;
   background-color: #fff;
   color: #626262;
-  font: 400 0.875rem/1.75rem "Raleway", sans-serif;
+  font: 400 0.875rem/1.75rem 'Raleway', sans-serif;
   transition: all 0.2s;
 }
 
@@ -351,10 +351,10 @@ select::-ms-expand {
 }
 
 .checkbox {
-  font: 400 0.75rem/1.25rem "Raleway", sans-serif;
+  font: 400 0.75rem/1.25rem 'Raleway', sans-serif;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: -15%;
   margin-right: 0.375rem;
 }
@@ -362,7 +362,7 @@ input[type="checkbox"] {
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active),
   screen and (-ms-high-contrast: none) {
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     vertical-align: -9%;
   }
 }
@@ -375,7 +375,7 @@ input[type="checkbox"] {
   border-radius: 1.5rem;
   background-color: #00bfd8;
   color: #fff;
-  font: 700 0.75rem/1.75rem "Raleway", sans-serif;
+  font: 700 0.75rem/1.75rem 'Raleway', sans-serif;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -395,7 +395,7 @@ input[type="checkbox"] {
   display: block;
   margin-bottom: 0;
   color: #626262;
-  font: 400 1.125rem/1rem "Raleway", sans-serif;
+  font: 400 1.125rem/1rem 'Raleway', sans-serif;
 }
 
 .help-block.with-errors .list-unstyled {
@@ -582,6 +582,77 @@ input[type="checkbox"] {
 }
 /* end of fade animation for image slider - magnific popup */
 
+/* MailChimp */
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+#mc-embedded-subscribe-form input[type='checkbox'] {
+  display: inline;
+  width: auto;
+  margin-right: 10px;
+}
+#mergeRow-gdpr {
+  margin-top: 20px;
+}
+#mergeRow-gdpr fieldset label {
+  font-weight: normal;
+}
+#mc-embedded-subscribe-form .mc_fieldset {
+  border: none;
+  min-height: 0px;
+  padding-bottom: 0px;
+}
+
+.mce-responses .response {
+  display: none;
+}
+
+#hiddenText {
+  position: absolute;
+  left: -5000px;
+}
+
+#mc_embed_signup .mc-field-group.input-group .newsletterList {
+  padding-left: 30px !important;
+}
+
+#mc_embed_signup_scroll
+  > div.mc-field-group.input-group
+  > ul
+  > li:nth-child(6)
+  > label {
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+.newsletter {
+  margin-top: 4rem;
+}
+
+#newsletterFrame {
+  height: 1000px;
+}
+
+@media (max-width: 500px) {
+  #newsletterFrame {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 350px) {
+  #newsletterFrame {
+    height: 1400px;
+  }
+}
+
+.eventImage {
+  max-height: 200px;
+}
+
 /*************************/
 /*     02. Preloader     */
 /*************************/
@@ -657,7 +728,7 @@ input[type="checkbox"] {
 .navbar-custom {
   background-color: #fff;
   box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-  font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+  font: 600 0.875rem/0.875rem 'Raleway', sans-serif;
   transition: all 0.2s;
 }
 
@@ -666,7 +737,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .navbar-brand.logo-text {
-  font: 600 2rem/1.5rem "Raleway", sans-serif;
+  font: 600 2rem/1.5rem 'Raleway', sans-serif;
   color: #393939;
   text-decoration: none;
 }
@@ -727,7 +798,7 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .dropdown-item .item-text {
-  font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+  font: 600 0.875rem/0.875rem 'Raleway', sans-serif;
 }
 
 .navbar-custom .dropdown-item:hover .item-text {
@@ -755,25 +826,25 @@ input[type="checkbox"] {
 }
 
 .navbar-custom
-  button[aria-expanded="false"]
+  button[aria-expanded='false']
   .navbar-toggler-awesome.fas.fa-times {
   display: none;
 }
 
 .navbar-custom
-  button[aria-expanded="false"]
+  button[aria-expanded='false']
   .navbar-toggler-awesome.fas.fa-bars {
   display: inline-block;
 }
 
 .navbar-custom
-  button[aria-expanded="true"]
+  button[aria-expanded='true']
   .navbar-toggler-awesome.fas.fa-bars {
   display: none;
 }
 
 .navbar-custom
-  button[aria-expanded="true"]
+  button[aria-expanded='true']
   .navbar-toggler-awesome.fas.fa-times {
   display: inline-block;
   margin-right: 0.125rem;
@@ -867,13 +938,6 @@ button {
 #services .flex-container {
   display: flex;
   flex-wrap: wrap;
-}
-
-#services .alert,
-#projects .alert {
-  background-color: #dff7fb;
-  border-color: #00bfd8;
-  font-size: 1rem;
 }
 
 .cards-1 .card .list-unstyled {
@@ -1057,7 +1121,7 @@ button {
 .form-2 {
   padding-top: 4rem;
   padding-bottom: 2rem;
-  background: url("/images/contact-background.jpg") center center no-repeat;
+  background: url('/images/contact-background.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -1219,7 +1283,7 @@ a.back-to-top {
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 1.875rem;
-  background: #00bfd8 url("/images/up-arrow.png") no-repeat center 47%;
+  background: #00bfd8 url('/images/up-arrow.png') no-repeat center 47%;
   background-size: 1.125rem 1.125rem;
   text-indent: -9999px;
 }
@@ -1233,7 +1297,7 @@ a:hover.back-to-top {
 /***************************/
 .ex-header {
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -1253,7 +1317,6 @@ a:hover.back-to-top {
 }
 
 .ex-basic-2 {
-  padding-top: 4.75rem;
   padding-bottom: 4rem;
 }
 
@@ -1425,7 +1488,7 @@ a:hover.back-to-top {
   /* Extra Pages */
   .ex-header {
     padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
   }
 
   .ex-basic-2 .text-container.dark {
@@ -1561,7 +1624,7 @@ a:hover.back-to-top {
 
   /* Header */
   .header {
-    background: url("/images/header-background.jpg") center center no-repeat;
+    background: url('/images/header-background.jpg') center center no-repeat;
     background-size: cover;
   }
 
@@ -1678,7 +1741,7 @@ a:hover.back-to-top {
 
   /* Extra Pages */
   .ex-header {
-    background: url("/images/ex-header-background.jpg") center center no-repeat;
+    background: url('/images/ex-header-background.jpg') center center no-repeat;
     background-size: cover;
   }
 

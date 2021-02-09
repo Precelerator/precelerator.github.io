@@ -51,7 +51,7 @@ export default function Navigation() {
               Projektwand
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a
               className="nav-link"
               href="https://precelerator.de/blog"
@@ -59,7 +59,7 @@ export default function Navigation() {
             >
               Precelerator Blog
             </a>
-          </li>
+          </li> */}
           <li className="nav-item">
             <a className="nav-link page-scroll" href="#contact">
               Kontakt

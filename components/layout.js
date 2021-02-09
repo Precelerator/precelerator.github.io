@@ -65,6 +65,12 @@ export default function Layout({ children, home }) {
           href="/images/favicons/safari-pinned-tab.svg"
           color="#5bbad5"
         />
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         {/* Scripts */}
@@ -81,6 +87,12 @@ export default function Layout({ children, home }) {
         <script src="/js/validator.min.js"></script>
         {/* Validator.js - Bootstrap plugin that validates forms */}
         <script src="/js/scripts.js"></script>
+        {/* MailChimp */}
+        <script
+          type="text/javascript"
+          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+        ></script>
+        <script src="/js/mailchimp.js"></script>
         {/* Custom scripts */}
       </Head>
       <div id="cookies-eu-banner" style={{ display: 'none' }}>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Navigation() {
   return (
@@ -53,7 +53,7 @@ export default function Navigation() {
               Projektwand
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a
               className="nav-link"
               href="https://precelerator.de/blog"
@@ -61,7 +61,7 @@ export default function Navigation() {
             >
               Precelerator Blog
             </a>
-          </li>
+          </li> */}
         </ul>
         {/* <span className="nav-item social-icons">
               <span className="fa-stack">
