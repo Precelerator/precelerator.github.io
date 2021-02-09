@@ -118,14 +118,14 @@ export default function Team() {
               <div className="image-wrapper">
                 <img
                   className="img-fluid"
-                  src="/images/team-sce.jpg"
+                  src="/images/team-jk.png"
                   alt="alternative"
                 />
               </div>
               <p className="p-large">
                 <strong>Julian Kern</strong>
               </p>
-              <p className="job-title">Ansprechpartner für Fertigungstechnik</p>
+              <p className="job-title">Ansprechpartner Prototypenbau</p>
 
               {/* <span className="social-icons">
                       <TeamSocial
