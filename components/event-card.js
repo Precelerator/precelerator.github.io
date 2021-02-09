@@ -2,7 +2,7 @@ export default function EventCard({ children, title, date, time }) {
   return (
     <div className="card">
       <img
-        class="eventImage"
+        className="eventImage"
         src={getImageLink(title)}
         alt="Event Illustration"
       />
@@ -20,20 +20,20 @@ export default function EventCard({ children, title, date, time }) {
 }
 
 const getImageLink = (title) => {
-  let base = '/images/e';
-  if (title.toLowerCase().includes('show')) {
+  let base = "/images/e";
+  if (title.toLowerCase().includes("show")) {
     return `${base}-showyourgadget.jpg`;
   }
-  if (title.toLowerCase().includes('make')) {
+  if (title.toLowerCase().includes("make")) {
     return `${base}-make.jpg`;
   }
-  if (title.toLowerCase().includes('digital')) {
+  if (title.toLowerCase().includes("digital")) {
     return `${base}-digital.jpg`;
   }
-  if (title.toLowerCase().includes('personality')) {
+  if (title.toLowerCase().includes("personality")) {
     return `${base}-personalitygym.jpg`;
   }
-  if (title.toLowerCase().includes('ideenwerkstatt')) {
+  if (title.toLowerCase().includes("ideenwerkstatt")) {
     return `${base}-ideenwerkstatt.jpg`;
   }
 };

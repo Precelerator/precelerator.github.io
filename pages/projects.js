@@ -1,42 +1,51 @@
-import Layout from '../components/layout';
-import SiteHeader from '../components/site-header';
-import TextContainer from '../components/text-container';
-import ProjectCard from '../components/project-card';
-import Breadcrumbs from '../components/breadcrumbs';
+import Layout from "../components/layout";
+import SiteHeader from "../components/site-header";
+import TextContainer from "../components/text-container";
+import ProjectCard from "../components/project-card";
+import Breadcrumbs from "../components/breadcrumbs";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState("");
   const categories = [
-    'Umweltschutz',
-    'Maschinenbau',
-    'Event',
-    'Mobilität',
-    'Dienstleistung',
-    'Forschung',
-    'Architektur',
-    'Bildung',
-    'Design',
-    'Elektronik',
-    'Robotik',
-    'App',
-    'E-Commerce',
-    'Soziales',
-    'Nachhaltige Entwicklung',
-    'Kunst',
-    'Ernährung',
-    'Neue Materialien',
-    'Sonstiges',
+    "Umweltschutz",
+    "Maschinenbau",
+    "Event",
+    "Mobilität",
+    "Dienstleistung",
+    "Forschung",
+    "Architektur",
+    "Bildung",
+    "Design",
+    "Elektronik",
+    "Robotik",
+    "App",
+    "E-Commerce",
+    "Soziales",
+    "Nachhaltige Entwicklung",
+    "Kunst",
+    "Ernährung",
+    "Neue Materialien",
+    "Sonstiges",
   ];
+
+  const preloaderFadeOutTime = 500;
+  function hidePreloader() {
+    var preloader = $(".spinner-wrapper");
+    setTimeout(function () {
+      preloader.fadeOut(preloaderFadeOutTime);
+    }, 500);
+  }
 
   useEffect(function effectFunction() {
     fetch(
-      'https://func-projektwand-backend.azurewebsites.net/api/GetProjects?code=w3aYAFhEK6j4a11lirL/UsuvQgRSG/TWuzsfbaLMBkoN29MtZ1ToPQ==',
+      "https://func-projektwand-backend.azurewebsites.net/api/GetProjects?code=w3aYAFhEK6j4a11lirL/UsuvQgRSG/TWuzsfbaLMBkoN29MtZ1ToPQ=="
     )
       .then((response) => response.json())
-      .then((projectList) => setProjects(projectList));
+      .then((projectList) => setProjects(projectList))
+      .then(hidePreloader());
   }, []);
 
   const changeSelect = (event) => {
@@ -67,6 +76,13 @@ export default function Projects() {
           </a>
         </TextContainer>
         <div className="container cards-1">
+          <div className="spinner-wrapper">
+            <div className="spinner">
+              <div className="bounce1"></div>
+              <div className="bounce2"></div>
+              <div className="bounce3"></div>
+            </div>
+          </div>
           <div className="row">
             <div className="col-lg-12 select-container">
               <select

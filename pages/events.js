@@ -1,20 +1,28 @@
-import Layout from '../components/layout';
-import SiteHeader from '../components/site-header';
-import TextContainer from '../components/text-container';
-import EventCard from '../components/event-card';
-import Breadcrumbs from '../components/breadcrumbs';
+import Layout from "../components/layout";
+import SiteHeader from "../components/site-header";
+import TextContainer from "../components/text-container";
+import EventCard from "../components/event-card";
+import Breadcrumbs from "../components/breadcrumbs";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function Events() {
   const [events, setEvents] = useState([]);
+  const preloaderFadeOutTime = 500;
+  function hidePreloader() {
+    var preloader = $(".spinner-wrapper");
+    setTimeout(function () {
+      preloader.fadeOut(preloaderFadeOutTime);
+    }, 500);
+  }
 
   useEffect(function effectFunction() {
     fetch(
-      'https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg==',
+      "https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg=="
     )
       .then((response) => response.json())
-      .then((eventList) => setEvents(eventList));
+      .then((eventList) => setEvents(eventList))
+      .then(hidePreloader());
   }, []);
 
   return (
@@ -34,6 +42,13 @@ export default function Events() {
           </p>
         </TextContainer>
         <div className="container cards-1">
+          <div className="spinner-wrapper">
+            <div className="spinner">
+              <div className="bounce1"></div>
+              <div className="bounce2"></div>
+              <div className="bounce3"></div>
+            </div>
+          </div>
           <div className="row">
             <div className="col-lg-12">
               <div className="flex-container">
@@ -45,7 +60,7 @@ export default function Events() {
                     key={events.indexOf(e) + 1}
                   >
                     <div>
-                      {e.beschreibung.split('#').map((a) => (
+                      {e.beschreibung.split("#").map((a) => (
                         <p className="card-text">{a}</p>
                       ))}
                     </div>
@@ -54,7 +69,7 @@ export default function Events() {
                       href={e.zoomLink}
                       target="_blank"
                     >
-                      Zur Anmeldung (Zoom)
+                      Zur Anmeldung
                     </a>
                   </EventCard>
                 ))}

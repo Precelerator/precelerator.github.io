@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Navigation from '../sections/navigation';
-import Navigation2 from '../sections/navigation2';
-import Footer from '../sections/footer';
+import Head from "next/head";
+import Navigation from "../sections/navigation";
+import Navigation2 from "../sections/navigation2";
+import Footer from "../sections/footer";
 
 export default function Layout({ children, home }) {
   return (
@@ -95,7 +95,7 @@ export default function Layout({ children, home }) {
         <script src="/js/mailchimp.js"></script>
         {/* Custom scripts */}
       </Head>
-      <div id="cookies-eu-banner" style={{ display: 'none' }}>
+      <div id="cookies-eu-banner" style={{ display: "none" }}>
         Wir nutzen Google Analytics und Google Fonts, um dir die Inhalte auf
         dieser Seite bereitzustellen. Klick auf "Akzeptieren", um unseren
         Cookie-Richtlinien zuzustimmen.
