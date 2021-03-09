@@ -653,6 +653,18 @@ input[type="checkbox"] {
   max-height: 200px;
 }
 
+.card .btn-solid-lg {
+  margin-top: 20px;
+}
+
+.card .less {
+  display: none;
+}
+
+#learn-more {
+  text-decoration: none;
+}
+
 /*************************/
 /*     02. Preloader     */
 /*************************/
@@ -1047,6 +1059,19 @@ button {
 /*********************/
 #team {
   background-color: #dff7fb78;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .team-container .team-member {
+    min-width: 25%;
+    box-sizing: border-box;
+  }
 }
 
 .basic-4 {

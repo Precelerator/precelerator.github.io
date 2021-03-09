@@ -32,9 +32,8 @@ export default function Events() {
         <TextContainer>
           <p>
             Hier findest du die anstehenden Workshops und Events des
-            Precelerators. Eine Anmeldung ist nicht nötig, tritt einfach zur
-            angegebenen Zeit dem angegebenen Zoom-Link bei. Wir freuen uns auf
-            dich!
+            Precelerators. Registriere dich über den Anmeldungslink, um dir
+            einen Platz zu sichern. Wir freuen uns auf dich!
           </p>
           <p>
             Du hast Fragen zu den einzelnen Veranstaltungen? Schreib uns eine
@@ -59,18 +58,24 @@ export default function Events() {
                     time={e.uhrzeit}
                     key={events.indexOf(e) + 1}
                   >
-                    <div>
-                      {e.beschreibung.split("#").map((a) => (
-                        <p className="card-text">{a}</p>
-                      ))}
-                    </div>
-                    <a
-                      className="btn-solid-lg"
-                      href={e.zoomLink}
-                      target="_blank"
+                    <div
+                      id="collapse-example"
+                      class="collapse"
+                      aria-labelledby="learn-more"
                     >
-                      Zur Anmeldung
-                    </a>
+                      <div>
+                        {e.beschreibung.split("#").map((a) => (
+                          <p className="card-text">{a}</p>
+                        ))}
+                      </div>
+                      <a
+                        className="btn-solid-lg"
+                        href={e.zoomLink}
+                        target="_blank"
+                      >
+                        Zur Anmeldung
+                      </a>
+                    </div>
                   </EventCard>
                 ))}
               </div>
