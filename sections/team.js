@@ -22,30 +22,7 @@ export default function Team() {
             {/* end of col */}
           </div>
           {/* end of row */}
-        </div>
-        {/* end of container */}
-        <Swiper
-          navigation
-          pagination
-          autoplay={{
-            delay: 10000,
-          }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-            },
-            450: {
-              slidesPerView: 2,
-            },
-            600: {
-              slidesPerView: 4,
-            },
-            1200: {
-              slidesPerView: 5,
-            },
-          }}
-        >
-          <SwiperSlide>
+          <div class="team-container">
             <div className="team-member">
               <div className="image-wrapper">
                 <img
@@ -65,8 +42,6 @@ export default function Team() {
                 ></TeamSocial>
               </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
             <div className="team-member">
               <div className="image-wrapper">
                 <img
@@ -87,8 +62,26 @@ export default function Team() {
                 ></TeamSocial>
               </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+            <div className="team-member">
+              <div className="image-wrapper">
+                <img
+                  className="img-fluid"
+                  src="/images/team-hg.jpg"
+                  alt="alternative"
+                />
+              </div>
+              <p className="p-large">
+                <strong>Prof. Dr. Herbert Gillig</strong>
+              </p>
+              <p className="job-title">Board-Direktor Precelerator</p>
+
+              <span className="social-icons">
+                <TeamSocial
+                  href="https://www.sce.de/herbert-gillig.html"
+                  icon="fa fa-globe"
+                ></TeamSocial>
+              </span>
+            </div>
             <div className="team-member">
               <div className="image-wrapper">
                 <img
@@ -112,8 +105,6 @@ export default function Team() {
                 ></TeamSocial>
               </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
             <div className="team-member">
               <div className="image-wrapper">
                 <img
@@ -134,30 +125,29 @@ export default function Team() {
                       ></TeamSocial>
                     </span> */}
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
             <div className="team-member">
               <div className="image-wrapper">
                 <img
                   className="img-fluid"
-                  src="/images/team-hg.jpg"
+                  src="/images/team-c-lab.jpg"
                   alt="alternative"
                 />
               </div>
               <p className="p-large">
-                <strong>Prof. Dr. Herbert Gillig</strong>
+                <strong>c.lab - a place for creativity</strong>
               </p>
-              <p className="job-title">Board-Direktor Precelerator</p>
+              <p className="job-title">Studentische Offene Werkstatt</p>
 
               <span className="social-icons">
                 <TeamSocial
-                  href="https://www.sce.de/herbert-gillig.html"
+                  href="https://creative-lab-hm.de/"
                   icon="fa fa-globe"
                 ></TeamSocial>
               </span>
             </div>
-          </SwiperSlide>
-        </Swiper>
+          </div>
+        </div>
+        {/* end of container */}
       </div>
     </>
   );
