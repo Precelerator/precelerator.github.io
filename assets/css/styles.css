@@ -1240,6 +1240,50 @@ button {
 }
 
 /**********************/
+/*     17. Events     */
+/**********************/
+#events {
+  background-color: #dff7fb78;
+}
+
+#events .card {
+  padding: 0;
+  background-color: #fff;
+}
+
+#events .card-header {
+  padding: 0;
+  background-color: #fff;
+}
+
+#events .content {
+  padding: 1rem;
+}
+
+#events .card-body {
+  padding: 2rem;
+}
+
+#events img {
+  width: 100%;
+}
+
+#events .ex-header {
+  padding-bottom: 2rem;
+}
+
+#events .ex-basic-2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+#events .cards-1 {
+  background-color: #dff7fb00;
+  padding-top: 1.625rem;
+}
+
+/**********************/
 /*     17. Projects     */
 /**********************/
 #projects {

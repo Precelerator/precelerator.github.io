@@ -16,6 +16,9 @@ export default function Events() {
     }, 500);
   }
 
+  // prettier-ignore
+  const id = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ab", "bc", "cd", "de", "ef", "fg", "gh", "hi", "ij", "jk", "kl", "lm"];
+
   useEffect(function effectFunction() {
     fetch(
       "https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg=="
@@ -24,10 +27,9 @@ export default function Events() {
       .then((eventList) => setEvents(eventList))
       .then(hidePreloader());
   }, []);
-
   return (
     <Layout home={false}>
-      <div id="projects">
+      <div id="events">
         <SiteHeader heading="Anstehende Veranstaltungen"></SiteHeader>
         <TextContainer>
           <p>
@@ -50,40 +52,28 @@ export default function Events() {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <div className="flex-container">
-                {events.map((e) => (
+              <div
+                id="accordion"
+                className="flex-container"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                {events.map((e, index) => (
                   <EventCard
                     title={e.titel}
                     date={e.datum}
                     time={e.uhrzeit}
-                    key={events.indexOf(e) + 1}
-                  >
-                    <div
-                      id="collapse-example"
-                      class="collapse"
-                      aria-labelledby="learn-more"
-                    >
-                      <div>
-                        {e.beschreibung.split("#").map((a) => (
-                          <p className="card-text">{a}</p>
-                        ))}
-                      </div>
-                      <a
-                        className="btn-solid-lg"
-                        href={e.zoomLink}
-                        target="_blank"
-                      >
-                        Zur Anmeldung
-                      </a>
-                    </div>
-                  </EventCard>
+                    description={e.beschreibung}
+                    zoomLink={e.zoomLink}
+                    id={id[index]}
+                  ></EventCard>
                 ))}
               </div>
             </div>
           </div>
         </div>
+        <Breadcrumbs siteName="Veranstaltungen"></Breadcrumbs>
       </div>
-      <Breadcrumbs siteName="Veranstaltungen"></Breadcrumbs>
     </Layout>
   );
 }

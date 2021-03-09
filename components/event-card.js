@@ -1,46 +1,50 @@
-export default function EventCard({ children, title, date, time }) {
-  const toggleLearnMore = () => {
-    // document.querySelectorAll(".more").style.display = "none";
-    // document.querySelectorAll(".less").style.display = "block";
-  };
-  const toggleLess = () => {
-    // document.querySelector(".more").style.display = "block";
-    // document.querySelector(".less").style.display = "none";
-  };
-
+export default function EventCard({
+  title,
+  date,
+  time,
+  description,
+  zoomLink,
+  id,
+}) {
   return (
     <div className="card">
-      <img
-        className="eventImage"
-        src={getImageLink(title)}
-        alt="Event Illustration"
-      />
-      <div className="card-body">
-        <div>
+      <div class="card-header" role="tab" id={title}>
+        <img
+          className="eventImage"
+          src={getImageLink(title)}
+          alt="Event Illustration"
+        />
+        <div class="content">
           <h6>
             {date} - {time}
           </h6>
           <h4 className="card-title">{title}</h4>
           <a
             data-toggle="collapse"
-            href="javascript:void(0);"
-            data-target="#collapse-example"
+            data-parent="#accordion"
+            href={"#" + id}
             aria-expanded="true"
-            aria-controls="collapse-example"
-            id="learn-more"
-            class="d-block"
+            aria-controls={id}
+            className="d-block"
           >
-            <div class="more" onClick={toggleLearnMore}>
-              Mehr erfahren&nbsp;
-              <i class="fa fa-chevron-down"></i>
-            </div>
-            <div class="less" onClick={toggleLess}>
-              Weniger&nbsp;
-              <i class="fa fa-chevron-up"></i>
-            </div>
+            Mehr Infos&nbsp;<i className="fa fa-chevron-down pull-right"></i>
           </a>
         </div>
-        {children}
+      </div>
+      <div
+        id={id}
+        className="card-body collapse"
+        role="tabpanel"
+        aria-labelledby={title}
+      >
+        <div>
+          {description.split("#").map((a) => (
+            <p className="card-text">{a}</p>
+          ))}
+        </div>
+        <a className="btn-solid-lg" href={zoomLink} target="_blank">
+          Zur Anmeldung
+        </a>
       </div>
     </div>
   );
