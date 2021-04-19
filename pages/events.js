@@ -39,7 +39,15 @@ export default function Events() {
           </p>
           <p>
             Du hast Fragen zu den einzelnen Veranstaltungen? Schreib uns eine
-            Mail an precelerator@sce.de.
+            Mail an precelerator@sce.de. Folge uns auf{" "}
+            <a
+              href="https://www.instagram.com/precelerator/"
+              target="_blank"
+              title="Precelerator Instagram"
+            >
+              Insta
+            </a>
+            , um auf dem Laufenden zu bleiben!
           </p>
         </TextContainer>
         <div className="container cards-1">

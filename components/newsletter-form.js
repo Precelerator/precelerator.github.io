@@ -7,53 +7,53 @@ export default function NewsletterForm() {
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
-          class="validate"
+          className="validate"
           target="_blank"
           novalidate
         >
           <div id="mc_embed_signup_scroll">
-            <div class="indicates-required">
-              <span class="asterisk">*</span> Pflichtfeld
+            <div className="indicates-required">
+              <span className="asterisk">*</span> Pflichtfeld
             </div>
-            <div class="mc-field-group">
+            <div className="mc-field-group">
               <label for="mce-EMAIL">
-                Email <span class="asterisk">*</span>
+                Email <span className="asterisk">*</span>
               </label>
               <input
                 type="email"
                 value=""
                 name="EMAIL"
-                class="required email"
+                className="required email"
                 id="mce-EMAIL"
               />
             </div>
-            <div class="mc-field-group">
+            <div className="mc-field-group">
               <label for="mce-LNAME">
-                Nachname <span class="asterisk">*</span>
+                Nachname <span className="asterisk">*</span>
               </label>
               <input
                 type="text"
                 value=""
                 name="LNAME"
-                class="required"
+                className="required"
                 id="mce-LNAME"
               />
             </div>
-            <div class="mc-field-group">
+            <div className="mc-field-group">
               <label for="mce-FNAME">
-                Vorname <span class="asterisk">*</span>
+                Vorname <span className="asterisk">*</span>
               </label>
               <input
                 type="text"
                 value=""
                 name="FNAME"
-                class="required"
+                className="required"
                 id="mce-FNAME"
               />
             </div>
-            <div class="mc-field-group input-group">
+            <div className="mc-field-group input-group">
               <strong>Unsere Newsletter </strong>
-              <ul class="newsletterList">
+              <ul className="newsletterList">
                 <li>
                   <input
                     type="checkbox"
@@ -120,9 +120,9 @@ export default function NewsletterForm() {
             </div>
             <div
               id="mergeRow-gdpr"
-              class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"
+              className="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"
             >
-              <div class="content__gdpr">
+              <div className="content__gdpr">
                 <label>Erlaubnis zum Marketing</label>
                 <p>
                   SCE wird die Informationen, die Sie in diesem Formular
@@ -132,38 +132,38 @@ export default function NewsletterForm() {
                   uns hören möchten:
                 </p>
                 <fieldset
-                  class="mc_fieldset gdprRequired mc-field-group"
+                  className="mc_fieldset gdprRequired mc-field-group"
                   name="interestgroup_field"
                 >
-                  <label class="checkbox subfield" for="gdpr_1">
+                  <label className="checkbox subfield" for="gdpr_1">
                     <input
                       type="checkbox"
                       id="gdpr_1"
                       name="gdpr[1]"
                       value="Y"
-                      class="av-checkbox gdpr"
+                      className="av-checkbox gdpr"
                     />
-                    <span>E-Mail</span>{' '}
+                    <span>E-Mail</span>{" "}
                   </label>
-                  <label class="checkbox subfield" for="gdpr_5">
+                  <label className="checkbox subfield" for="gdpr_5">
                     <input
                       type="checkbox"
                       id="gdpr_5"
                       name="gdpr[5]"
                       value="Y"
-                      class="av-checkbox gdpr"
+                      className="av-checkbox gdpr"
                     />
-                    <span>Postwurfsendung</span>{' '}
+                    <span>Postwurfsendung</span>{" "}
                   </label>
-                  <label class="checkbox subfield" for="gdpr_9">
+                  <label className="checkbox subfield" for="gdpr_9">
                     <input
                       type="checkbox"
                       id="gdpr_9"
                       name="gdpr[9]"
                       value="Y"
-                      class="av-checkbox gdpr"
+                      className="av-checkbox gdpr"
                     />
-                    <span>Maßgeschneiderte Online-Werbung</span>{' '}
+                    <span>Maßgeschneiderte Online-Werbung</span>{" "}
                   </label>
                 </fieldset>
                 <p>
@@ -178,20 +178,20 @@ export default function NewsletterForm() {
                   Übereinstimmung mit diesen Bedingungen verarbeiten dürfen.
                 </p>
               </div>
-              <div class="content__gdprLegal">
+              <div className="content__gdprLegal">
                 <p>
                   We use Mailchimp as our marketing platform. By clicking below
                   to subscribe, you acknowledge that your information will be
-                  transferred to Mailchimp for processing.{' '}
+                  transferred to Mailchimp for processing.{" "}
                   <a href="https://mailchimp.com/legal/" target="_blank">
                     Learn more about Mailchimp's privacy practices here.
                   </a>
                 </p>
               </div>
             </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response"></div>
-              <div class="response" id="mce-success-response"></div>
+            <div id="mce-responses" className="clear">
+              <div className="response" id="mce-error-response"></div>
+              <div className="response" id="mce-success-response"></div>
             </div>
             <div id="hiddenText" aria-hidden="true">
               <input
@@ -201,13 +201,13 @@ export default function NewsletterForm() {
                 value=""
               />
             </div>
-            <div class="clear">
+            <div className="clear">
               <input
                 type="submit"
                 value="Anmelden"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                class="button"
+                className="button"
               />
             </div>
           </div>

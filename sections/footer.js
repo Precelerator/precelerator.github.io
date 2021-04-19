@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="footer-col middle">
                 <h4>Wichtige Links</h4>
                 <ul className="list-unstyled li-space-lg">
-                  <li className="media">
+                  {/* <li className="media">
                     <i className="fas fa-square"></i>
                     <div className="media-body">
                       Unser Blog:
@@ -24,18 +24,18 @@ export default function Footer() {
                         className="turquoise"
                         href="https://precelerator.de/blog"
                       >
-                        {' '}
+                        {" "}
                         Precelerator Blog
                       </a>
                     </div>
-                  </li>
+                  </li> */}
                   <li className="media">
                     <i className="fas fa-square"></i>
                     <div className="media-body">
                       Unsere Matching-Plattform für Ideengeber und
                       Interessierte:
                       <a className="turquoise" href="/projects">
-                        {' '}
+                        {" "}
                         MitstreiterInnen gesucht!
                       </a>
                     </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                     <div className="media-body">
                       Unser Newsletter rund um den Precelerator
                       <a className="turquoise" href="/newsletter">
-                        {' '}
+                        {" "}
                         Newsletter
                       </a>
                     </div>
@@ -86,9 +86,9 @@ export default function Footer() {
                 </span>
                 <span className="fa-stack">
                   <a
-                    href="https://www.instagram.com/straschegcenter/?hl=de"
+                    href="https://www.instagram.com/precelerator/"
                     target="_blank"
-                    title="SCE Instagram"
+                    title="Precelerator Instagram"
                   >
                     <i className="fas fa-circle fa-stack-2x"></i>
                     <i className="fab fa-instagram fa-stack-1x"></i>
@@ -135,9 +135,9 @@ export default function Footer() {
                   </a>
                 </span>
                 <p className="p-small">
-                  © 2020{' '}
+                  © 2021{" "}
                   <a href="https://www.sce.de/">
-                    Strascheg Center for Entrepeneurship
+                    Strascheg Center for Entrepreneurship
                   </a>
                 </p>
               </div>
