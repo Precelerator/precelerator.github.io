@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import Layout from '../../components/layout';
-import SiteHeader from '../../components/site-header';
-import TextContainer from '../../components/text-container';
-import ProjectForm from '../../components/project-form';
-import ProjectBreadcrumbs from '../../components/project-breadcrumbs';
+import Layout from "../../components/layout";
+import SiteHeader from "../../components/site-header";
+import TextContainer from "../../components/text-container";
+import ProjectForm from "../../components/project-form";
+import ProjectBreadcrumbs from "../../components/project-breadcrumbs";
 
 export default function Project() {
   let object = {
-    projektname: '',
-    kurzbeschreibung: '',
-    suchtNach: '',
-    ausfuehrlicheBeschreibung: '',
-    kategorie: '',
-    kurzbeschreibungErsteller: '',
-    onlineSeit: '',
+    projektname: "",
+    kurzbeschreibung: "",
+    suchtNach: "",
+    ausfuehrlicheBeschreibung: "",
+    kategorie: "",
+    kurzbeschreibungErsteller: "",
+    onlineSeit: "",
   };
   const [project, setProject] = useState(object);
 
   useEffect(function effectFunction() {
-    let projectId = window.location.href.split('/').pop();
+    let projectId = window.location.href.split("/").pop();
     fetch(
-      `https://func-projektwand-backend.azurewebsites.net/api/GetProject?id=${projectId}&code=Iabzt16AezYrjIboXgavTwnKCLPFLfA2PQVApHhSpHR7nyu5yTmQFA==`,
+      `https://func-projektwand-backend.azurewebsites.net/api/GetProject?id=${projectId}&code=Iabzt16AezYrjIboXgavTwnKCLPFLfA2PQVApHhSpHR7nyu5yTmQFA==`
     )
       .then((response) => response.json())
       .then((project) => setProject(project));
@@ -44,7 +44,7 @@ export default function Project() {
         </div>
         <br></br>
         <br></br>
-        <ProjectForm></ProjectForm>
+        <ProjectForm project={project.projektname}></ProjectForm>
       </TextContainer>
       <ProjectBreadcrumbs
         projectName={project.projektname}
