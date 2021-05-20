@@ -27,13 +27,24 @@ export default class ProjectForm extends React.Component {
           data-focus="false"
           method="POST"
         >
-          <div className="form-group">
-            <label>Name:</label>
-            <input type="text" name="name" className="form-control-input" />
+          <div class="row">
+            <div className="form-group col-lg-6">
+              <label>Name:</label>
+              <input type="text" name="name" className="form-control-input" />
+            </div>
+            <div className="form-group col-lg-6">
+              <label>Email:</label>
+              <input type="email" name="email" className="form-control-input" />
+            </div>
           </div>
-          <div className="form-group">
-            <label>Email:</label>
-            <input type="email" name="email" className="form-control-input" />
+          <div className="form-group" style={{ display: "none" }}>
+            <label>Projekt:</label>
+            <input
+              type="email"
+              name="email"
+              className="form-control-input"
+              value={this.props.project}
+            />
           </div>
           <div className="form-group">
             <label>Nachricht/ Motivation:</label>
