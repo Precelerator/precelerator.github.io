@@ -54,7 +54,7 @@ export default function Services() {
           }}
         >
           <SwiperSlide>
-            <Card img="/images/services-icon-1.svg" title="CONNECT.">
+            <Card icon="fas fa-users" title="CONNECT.">
               <p>
                 Der Precelerator bringt Ideensucher und Interessierte mit
                 Fachexperten und Ideengebern zusammen. Damit ist er der ideale
@@ -74,7 +74,7 @@ export default function Services() {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card img="/images/services-icon-3.svg" title="PLAY.">
+            <Card icon="fa fa-gamepad" title="PLAY.">
               <p>
                 Im Precelerator erlernst du spielerisch den Umgang mit moderner
                 Technik und Ansätzen.
@@ -92,7 +92,7 @@ export default function Services() {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card img="/images/services-icon-2.svg" title="TRAIN.">
+            <Card icon="fa fa-dumbbell" title="TRAIN.">
               <p>
                 Der Precelerator stellt Ressourcen, Ansprechpartner und
                 Anregungen bereit, mithilfe derer du die für dein Projekt
@@ -111,7 +111,7 @@ export default function Services() {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card img="/images/services-icon-3.svg" title="CREATE.">
+            <Card icon="fa fa-rocket" title="CREATE.">
               <p>
                 Im Precelerator kannst du deine erworbenen Methoden und
                 Kompetenzen auf eigene Ideen, unternehmerische Vorhaben und
@@ -131,7 +131,7 @@ export default function Services() {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card img="/images/services-icon-3.svg" title="MAKE.">
+            <Card icon="far fa-hand-paper" title="MAKE.">
               <p>
                 Der Precelerator versteht sich als Ort, an dem Neues geschaffen
                 wird - seien es innovative Geschäftsmodelle, digitale
