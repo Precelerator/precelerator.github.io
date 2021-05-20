@@ -8,13 +8,13 @@ export default function EventCard({
 }) {
   return (
     <div className="card">
-      <div class="card-header" role="tab" id={title}>
+      <div className="card-header" role="tab" id={title}>
         <img
           className="eventImage"
           src={getImageLink(title)}
           alt="Event Illustration"
         />
-        <div class="content">
+        <div className="content">
           <h6>
             {date} - {time}
           </h6>

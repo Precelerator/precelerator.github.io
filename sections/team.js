@@ -1,6 +1,6 @@
-import TeamSocial from "../components/team-social";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import TeamSocial from '../components/team-social';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -22,7 +22,7 @@ export default function Team() {
             {/* end of col */}
           </div>
           {/* end of row */}
-          <div class="team-container">
+          <div className="team-container">
             <div className="team-member">
               <div className="image-wrapper">
                 <img

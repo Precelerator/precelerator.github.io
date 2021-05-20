@@ -1,32 +1,13 @@
-import Layout from "../components/layout";
-import SiteHeader from "../components/site-header";
-import TextContainer from "../components/text-container";
-import EventCard from "../components/event-card";
-import Breadcrumbs from "../components/breadcrumbs";
+import Layout from '../components/layout';
+import SiteHeader from '../components/site-header';
+import TextContainer from '../components/text-container';
+import EventCard from '../components/event-card';
+import Breadcrumbs from '../components/breadcrumbs';
 
-import { useState, useEffect } from "react";
-
-export default function Events() {
-  const [events, setEvents] = useState([]);
-  const preloaderFadeOutTime = 500;
-  function hidePreloader() {
-    var preloader = $(".spinner-wrapper");
-    setTimeout(function () {
-      preloader.fadeOut(preloaderFadeOutTime);
-    }, 500);
-  }
-
+export default function Events({ events }) {
   // prettier-ignore
   const id = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ab", "bc", "cd", "de", "ef", "fg", "gh", "hi", "ij", "jk", "kl", "lm"];
 
-  useEffect(function effectFunction() {
-    fetch(
-      "https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg=="
-    )
-      .then((response) => response.json())
-      .then((eventList) => setEvents(eventList))
-      .then(hidePreloader());
-  }, []);
   return (
     <Layout home={false}>
       <div id="events">
@@ -43,13 +24,6 @@ export default function Events() {
           </p>
         </TextContainer>
         <div className="container cards-1">
-          <div className="spinner-wrapper">
-            <div className="spinner">
-              <div className="bounce1"></div>
-              <div className="bounce2"></div>
-              <div className="bounce3"></div>
-            </div>
-          </div>
           <div className="row">
             <div className="col-lg-12">
               <div
@@ -76,4 +50,15 @@ export default function Events() {
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps(context) {
+  const response = await fetch(
+    'https://func-projektwand-backend.azurewebsites.net/api/GetEvents?code=/Kp3m0YQDHBfHZKCnepP6cOIbwy9CghpaSnQ630bChJBfasteSi4Eg==',
+  );
+  const events = await response.json();
+
+  return {
+    props: { events },
+  };
 }
