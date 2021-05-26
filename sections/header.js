@@ -17,12 +17,9 @@ export default function Header() {
 
                   <p className="p-large">
                     Der <strong>Precelerator</strong> ist der Community Space
-                    für Innovation und Entrepreneurship, Prototyping und Neue
-                    Technologien für alle Angehörigen der Hochschule München.
+                    für Innovation, Entrepreneurship und Prototyping für alle
+                    Angehörigen der Hochschule München.
                   </p>
-                  <a className="btn-solid-lg page-scroll" href="#services">
-                    MEHR ERFAHREN
-                  </a>
                 </div>
                 {/* end of text-container */}
               </div>
