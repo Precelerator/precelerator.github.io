@@ -85,4 +85,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('innovations')) {
     return `${base}-inno.jpg`;
   }
+  if (title.toLowerCase().includes('pitch')) {
+    return `${base}-pitch.jpg`;
+  }
 };
