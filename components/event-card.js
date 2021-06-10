@@ -88,4 +88,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('pitch')) {
     return `${base}-pitch.jpg`;
   }
+  if (title.toLowerCase().includes('teg talk')) {
+    return `${base}-teg.png`;
+  }
 };
