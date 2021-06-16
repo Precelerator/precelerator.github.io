@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 export default class ProjectForm extends React.Component {
   constructor(props) {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: "",
+      status: '',
     };
   }
 
@@ -27,21 +27,32 @@ export default class ProjectForm extends React.Component {
           data-focus="false"
           method="POST"
         >
-          <div class="row">
+          <div className="row">
             <div className="form-group col-lg-6">
               <label>Name:</label>
-              <input type="text" name="name" className="form-control-input" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className="form-control-input"
+              />
             </div>
             <div className="form-group col-lg-6">
               <label>Email:</label>
-              <input type="email" name="email" className="form-control-input" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className="form-control-input"
+              />
             </div>
           </div>
-          <div className="form-group" style={{ display: "none" }}>
+          <div className="form-group" style={{ display: 'none' }}>
             <label>Projekt:</label>
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="projekt"
+              id="projekt"
               className="form-control-input"
               value={this.props.project}
             />
@@ -55,7 +66,7 @@ export default class ProjectForm extends React.Component {
               required
             ></textarea>
           </div>
-          {status === "SUCCESS" ? (
+          {status === 'SUCCESS' ? (
             <p>
               <b>
                 Danke für dein Interesse! Das Precelerator-Team wird sich in
@@ -87,7 +98,7 @@ export default class ProjectForm extends React.Component {
               </div>
             </>
           )}
-          {status === "ERROR" && (
+          {status === 'ERROR' && (
             <p>
               Es ist ein Fehler aufgetreten. Bitte kontaktiere
               fabio.maienschein@sce.de.
@@ -104,14 +115,14 @@ export default class ProjectForm extends React.Component {
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
+        this.setState({ status: 'SUCCESS' });
       } else {
-        this.setState({ status: "ERROR" });
+        this.setState({ status: 'ERROR' });
       }
     };
     xhr.send(data);
