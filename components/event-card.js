@@ -22,7 +22,7 @@ export default function EventCard({
           <a
             data-toggle="collapse"
             data-parent="#accordion"
-            href={'#' + id}
+            href={"#" + id}
             aria-expanded="true"
             aria-controls={id}
             className="d-block"
@@ -38,7 +38,7 @@ export default function EventCard({
         aria-labelledby={title}
       >
         <div>
-          {description.split('#').map((a) => (
+          {description.split("#").map((a) => (
             <p className="card-text">{a}</p>
           ))}
         </div>
@@ -51,48 +51,51 @@ export default function EventCard({
 }
 
 const getImageLink = (title) => {
-  let base = '/images/e';
-  if (title.toLowerCase().includes('your gadget')) {
+  let base = "/images/e";
+  if (title.toLowerCase().includes("your gadget")) {
     return `${base}-showyourgadget.jpg`;
   }
-  if (title.toLowerCase().includes('make')) {
+  if (title.toLowerCase().includes("make")) {
     return `${base}-make.jpg`;
   }
   if (
-    title.toLowerCase().includes('digital prototyping') ||
-    title.toLowerCase().includes('coding')
+    title.toLowerCase().includes("digital prototyping") ||
+    title.toLowerCase().includes("coding")
   ) {
     return `${base}-digital.jpg`;
   }
-  if (title.toLowerCase().includes('personality')) {
+  if (title.toLowerCase().includes("personality")) {
     return `${base}-personalitygym.jpg`;
   }
-  if (title.toLowerCase().includes('ideenwerkstatt')) {
+  if (title.toLowerCase().includes("ideenwerkstatt")) {
     return `${base}-ideenwerkstatt.jpg`;
   }
-  if (title.toLowerCase().includes('sdg')) {
+  if (title.toLowerCase().includes("sdg")) {
     return `${base}-sdg.png`;
   }
-  if (title.toLowerCase().includes('hydro')) {
+  if (title.toLowerCase().includes("hydro")) {
     return `${base}-hydroponic.jpg`;
   }
-  if (title.toLowerCase().includes('among')) {
+  if (title.toLowerCase().includes("among")) {
     return `${base}-amongus.png`;
   }
-  if (title.toLowerCase().includes('hackathon')) {
+  if (title.toLowerCase().includes("hackathon")) {
     return `${base}-hackathon.jpg`;
   }
-  if (title.toLowerCase().includes('innovations')) {
+  if (title.toLowerCase().includes("innovations")) {
     return `${base}-inno.jpg`;
   }
-  if (title.toLowerCase().includes('pitch')) {
+  if (title.toLowerCase().includes("cloud")) {
+    return `${base}-cloud.jpg`;
+  }
+  if (title.toLowerCase().includes("pitch")) {
     return `${base}-pitch.jpg`;
   }
-  if (title.toLowerCase().includes('teg talk')) {
+  if (title.toLowerCase().includes("teg talk")) {
     return `${base}-teg.png`;
   }
 
-  if (title.toLowerCase().includes('award')) {
+  if (title.toLowerCase().includes("award")) {
     return `${base}-award.png`;
   }
 };
