@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Navigation from "../sections/navigation";
-import Navigation2 from "../sections/navigation2";
-import Footer from "../sections/footer";
+import Head from 'next/head';
+import Navigation from '../sections/navigation';
+import Navigation2 from '../sections/navigation2';
+import Footer from '../sections/footer';
 
 export default function Layout({ children, home }) {
   return (
@@ -28,12 +28,12 @@ export default function Layout({ children, home }) {
         {/* website link */}
         <meta
           property="og:title"
-          content="Precelerator - Der Community Space am SCE"
+          content="Precelerator - Der Community Space für Entrepreneurship & Prototyping an der HM"
         />
         {/* title shown in the actual shared post */}
         <meta
           property="og:description"
-          content="Der Precelerator ist das Zentrum für innovative Projekte und Entrepreneurial Thinking am SCE, das Angebote und Beratungsleistungen für frühphasige Projekte und Gründungsvorhaben bietet."
+          content="Der Precelerator ist der Community Space für Entrepreneurship & Prototyping an der HM und stellt Studenten & Mitarbeitern Angebote und Beratungsleistungen für frühphasige Projekte und Gründungsvorhaben bereit."
         />
         {/* description shown in the actual shared post */}
         <meta property="og:image" content="" />
@@ -95,7 +95,7 @@ export default function Layout({ children, home }) {
         <script src="/js/mailchimp.js"></script>
         {/* Custom scripts */}
       </Head>
-      <div id="cookies-eu-banner" style={{ display: "none" }}>
+      <div id="cookies-eu-banner" style={{ display: 'none' }}>
         Wir nutzen Google Analytics und Google Fonts, um dir die Inhalte auf
         dieser Seite bereitzustellen. Klick auf "Akzeptieren", um unseren
         Cookie-Richtlinien zuzustimmen.

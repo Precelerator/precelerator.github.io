@@ -8,7 +8,7 @@ export default function Navigation() {
 
       {/* Image Logo */}
       <a className="navbar-brand logo-image" href="/">
-        <img src="/images/logo.svg" alt="Precelerator Logo" />
+        <img src="/images/logo-with-claim.svg" alt="Precelerator Logo" />
       </a>
 
       {/* Mobile Menu Toggle Button */}

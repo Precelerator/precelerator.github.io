@@ -7,7 +7,10 @@ export default function Footer() {
             <div className="col-md-4">
               <div className="footer-col">
                 <h4>Precelerator</h4>
-                <p>Der Community Space an der HM.</p>
+                <p>
+                  Der Community Space für Entrepreneurship & Entrepreneurship an
+                  der HM.
+                </p>
                 <img src="/images/logos-blog.png" className="logos-small"></img>
               </div>
             </div>
@@ -35,8 +38,8 @@ export default function Footer() {
                       Unsere Matching-Plattform für Ideengeber und
                       Interessierte:
                       <a className="turquoise" href="/projects">
-                        {" "}
-                        MitstreiterInnen gesucht!
+                        {' '}
+                        Mitstreiter:innen gesucht!
                       </a>
                     </div>
                   </li>
@@ -45,7 +48,7 @@ export default function Footer() {
                     <div className="media-body">
                       Unser Newsletter rund um den Precelerator
                       <a className="turquoise" href="/newsletter">
-                        {" "}
+                        {' '}
                         Newsletter
                       </a>
                     </div>
@@ -135,7 +138,7 @@ export default function Footer() {
                   </a>
                 </span>
                 <p className="p-small">
-                  © 2021{" "}
+                  © 2021{' '}
                   <a href="https://www.sce.de/">
                     Strascheg Center for Entrepreneurship
                   </a>

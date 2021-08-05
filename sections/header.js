@@ -5,21 +5,33 @@ export default function Header() {
         <div className="header-content">
           <div className="container">
             <div className="row">
+              <div className="col-sm-12">
+                <img
+                  id="logo-white"
+                  src="/images/logo-white.svg"
+                  alt="Precelerator Logo"
+                />
+              </div>
               <div className="col-lg-6">
                 <div className="text-container">
-                  <h2>
-                    <span className="turquoise">Connect. Train. Create.</span>
-                  </h2>
-                  <br />
-                  <h1>
-                    Der Community Space für Entrepreneurship & Prototyping
-                  </h1>
-
-                  <p className="p-large">
-                    Der <strong>Precelerator</strong> ist der Community Space
-                    für Innovation, Entrepreneurship und Prototyping für alle
-                    Angehörigen der Hochschule München.
-                  </p>
+                  <h2>Community Space for Entrepreneurship & Prototyping</h2>
+                  <ul>
+                    <li>
+                      Neue <b>Leute</b> kennenlernen
+                    </li>
+                    <li>
+                      Innovative <b>Tools & Gadgets</b> ausprobieren
+                    </li>
+                    <li>
+                      Eigene <b>Fähigkeiten</b> trainieren
+                    </li>
+                    <li>
+                      Gemeinsam <b>Projekte</b> realisieren
+                    </li>
+                    <li>
+                      Kostenlos <b>Prototypen</b> bauen
+                    </li>
+                  </ul>
                 </div>
                 {/* end of text-container */}
               </div>

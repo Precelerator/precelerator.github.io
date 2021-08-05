@@ -12,44 +12,45 @@ export default function Events({ events }) {
     <Layout home={false}>
       <div id="events">
         <SiteHeader heading="Anstehende Veranstaltungen"></SiteHeader>
-        <TextContainer>
-          <p>
-            Hier findest du die anstehenden Workshops und Events des
-            Precelerators. Registriere dich über den Anmeldungslink, um dir
-            einen Platz zu sichern. Wir freuen uns auf dich!
-          </p>
-          <p>
-            Du hast Fragen zu den einzelnen Veranstaltungen? Schreib uns eine
-            Mail an precelerator@sce.de. Folge uns auf{" "}
-            <a
-              href="https://www.instagram.com/precelerator/"
-              target="_blank"
-              title="Precelerator Instagram"
-            >
-              Insta
-            </a>
-            , um auf dem Laufenden zu bleiben!
-          </p>
-        </TextContainer>
-        <div className="container cards-1">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                id="accordion"
-                className="flex-container"
-                role="tablist"
-                aria-multiselectable="true"
-              >
-                {events.map((e, index) => (
-                  <EventCard
-                    title={e.titel}
-                    date={e.datum}
-                    time={e.uhrzeit}
-                    description={e.beschreibung}
-                    zoomLink={e.zoomLink}
-                    id={id[index]}
-                  ></EventCard>
-                ))}
+        <div className="event-page">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <p className="p-heading p-large">
+                  Du hast Fragen zu den einzelnen Veranstaltungen? Schreib uns
+                  eine Mail an precelerator@sce.de. Folge uns auf{' '}
+                  <a
+                    href="https://www.instagram.com/precelerator/"
+                    target="_blank"
+                    title="Precelerator Instagram"
+                  >
+                    Insta
+                  </a>
+                  , um auf dem Laufenden zu bleiben!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="container cards-1">
+            <div className="row">
+              <div className="col-lg-12">
+                <div
+                  id="accordion"
+                  className="flex-container"
+                  role="tablist"
+                  aria-multiselectable="true"
+                >
+                  {events.map((e, index) => (
+                    <EventCard
+                      title={e.titel}
+                      date={e.datum}
+                      time={e.uhrzeit}
+                      description={e.beschreibung}
+                      zoomLink={e.zoomLink}
+                      id={id[index]}
+                    ></EventCard>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
