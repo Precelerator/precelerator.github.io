@@ -8,8 +8,8 @@ export default function Footer() {
               <div className="footer-col">
                 <h4>Precelerator</h4>
                 <p>
-                  Der Community Space für Entrepreneurship & Entrepreneurship an
-                  der HM.
+                  Der Community Space für Entrepreneurship & Prototyping an der
+                  HM.
                 </p>
                 <img src="/images/logos-blog.png" className="logos-small"></img>
               </div>
