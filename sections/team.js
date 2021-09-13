@@ -1,6 +1,6 @@
-import TeamSocial from '../components/team-social';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import TeamSocial from "../components/team-social";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -28,7 +28,7 @@ export default function Team() {
                 <img
                   className="img-fluid"
                   src="/images/team-ml.jpg"
-                  alt="alternative"
+                  alt="Foto Teammitglied"
                 />
               </div>
               <p className="p-large">
@@ -47,7 +47,7 @@ export default function Team() {
                 <img
                   className="img-fluid"
                   src="/images/team-me.jpg"
-                  alt="alternative"
+                  alt="Foto Teammitglied"
                 />
               </div>
               <p className="p-large">
@@ -67,7 +67,7 @@ export default function Team() {
                 <img
                   className="img-fluid"
                   src="/images/team-hg.jpg"
-                  alt="alternative"
+                  alt="Foto Teammitglied"
                 />
               </div>
               <p className="p-large">
@@ -87,7 +87,7 @@ export default function Team() {
                 <img
                   className="img-fluid"
                   src="/images/team-fma.jpg"
-                  alt="alternative"
+                  alt="Foto Teammitglied"
                 />
               </div>
               <p className="p-large">
@@ -110,7 +110,7 @@ export default function Team() {
                 <img
                   className="img-fluid"
                   src="/images/team-jk.png"
-                  alt="alternative"
+                  alt="Foto Teammitglied"
                 />
               </div>
               <p className="p-large">
@@ -130,7 +130,7 @@ export default function Team() {
                 <img
                   className="img-fluid"
                   src="/images/team-c-lab.jpg"
-                  alt="alternative"
+                  alt="Foto Teammitglied"
                 />
               </div>
               <p className="p-large">
