@@ -69,7 +69,10 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('your gadget')) {
     return `${base}-showyourgadget.jpg`;
   }
-  if (title.toLowerCase().includes('make')) {
+  if (
+    title.toLowerCase().includes('make') &&
+    !title.toLowerCase().includes('light')
+  ) {
     return `${base}-make.jpg`;
   }
   if (
@@ -113,5 +116,11 @@ const getImageLink = (title) => {
   }
   if (title.toLowerCase().includes('einführungstage')) {
     return `${base}-einfuehrungstage.jpg`;
+  }
+  if (title.toLowerCase().includes('home')) {
+    return `${base}-smarthome.jpg`;
+  }
+  if (title.toLowerCase().includes('light')) {
+    return `${base}-licht.jpeg`;
   }
 };
