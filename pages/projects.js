@@ -1,33 +1,33 @@
-import Layout from "../components/layout";
-import SiteHeader from "../components/site-header";
-import TextContainer from "../components/text-container";
-import ProjectCard from "../components/project-card";
-import Breadcrumbs from "../components/breadcrumbs";
+import Layout from '../components/layout';
+import SiteHeader from '../components/site-header';
+import TextContainer from '../components/text-container';
+import ProjectCard from '../components/project-card';
+import Breadcrumbs from '../components/breadcrumbs';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function Projects({ projects }) {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState('');
   const categories = [
-    "Umweltschutz",
-    "Maschinenbau",
-    "Event",
-    "Mobilität",
-    "Dienstleistung",
-    "Forschung",
-    "Architektur",
-    "Bildung",
-    "Design",
-    "Elektronik",
-    "Robotik",
-    "App",
-    "E-Commerce",
-    "Soziales",
-    "Nachhaltige Entwicklung",
-    "Kunst",
-    "Ernährung",
-    "Neue Materialien",
-    "Sonstiges",
+    'Umweltschutz',
+    'Maschinenbau',
+    'Event',
+    'Mobilität',
+    'Dienstleistung',
+    'Forschung',
+    'Architektur',
+    'Bildung',
+    'Design',
+    'Elektronik',
+    'Robotik',
+    'App',
+    'E-Commerce',
+    'Soziales',
+    'Nachhaltige Entwicklung',
+    'Kunst',
+    'Ernährung',
+    'Neue Materialien',
+    'Sonstiges',
   ];
 
   const changeSelect = (event) => {
@@ -44,10 +44,6 @@ export default function Projects({ projects }) {
               Ohne Idee, aber motiviert? Stöbere durch die unten vorgestellten
               Projekte und finde ein Team, das deine Skills braucht!
             </p>
-            <p>
-              Klick auf ein Projekt, um mehr Details zum Projekt zu erhalten.
-            </p>
-            <hr></hr>
             <p>
               Du hast eine Idee, aber dir fehlt das Team zur Realisierung?
               Stelle dein Projekt vor und erreiche andere Studierende an der HM!
@@ -112,7 +108,7 @@ export default function Projects({ projects }) {
 
 export async function getStaticProps(context) {
   const response = await fetch(
-    "https://func-projektwand-backend.azurewebsites.net/api/GetProjects?code=w3aYAFhEK6j4a11lirL/UsuvQgRSG/TWuzsfbaLMBkoN29MtZ1ToPQ=="
+    'https://func-projektwand-backend.azurewebsites.net/api/GetProjects?code=w3aYAFhEK6j4a11lirL/UsuvQgRSG/TWuzsfbaLMBkoN29MtZ1ToPQ==',
   );
   const projects = await response.json();
 

@@ -16,7 +16,7 @@ export default function Events({ events }) {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <p className="p-heading p-large">
+                <p className="p-large text-center mt-2">
                   Du hast Fragen zu den einzelnen Veranstaltungen? Schreib uns
                   eine Mail an precelerator@sce.de. Folge uns auf{' '}
                   <a
@@ -28,30 +28,27 @@ export default function Events({ events }) {
                   </a>
                   , um auf dem Laufenden zu bleiben!
                 </p>
+                <p className="p-large text-center">
+                  Hybride Events sowie Events vor Ort finden im{' '}
+                  <a href="https://precelerator.de/#contact">Precelerator</a>{' '}
+                  (im W-Bau, Lothstraße 21) statt.
+                </p>
               </div>
             </div>
           </div>
           <div className="container cards-1">
-            <div className="row">
-              <div className="col-lg-12">
-                <div
-                  id="accordion"
-                  className="flex-container"
-                  role="tablist"
-                  aria-multiselectable="true"
-                >
-                  {events.map((e, index) => (
-                    <EventCard
-                      title={e.titel}
-                      date={e.datum}
-                      time={e.uhrzeit}
-                      description={e.beschreibung}
-                      zoomLink={e.zoomLink}
-                      id={id[index]}
-                    ></EventCard>
-                  ))}
-                </div>
-              </div>
+            <div className="flex-container">
+              {events.map((e, index) => (
+                <EventCard
+                  title={e.titel}
+                  date={e.datum}
+                  time={e.uhrzeit}
+                  mode={e.modus}
+                  description={e.beschreibung}
+                  zoomLink={e.zoomLink}
+                  id={id[index]}
+                ></EventCard>
+              ))}
             </div>
           </div>
         </div>
