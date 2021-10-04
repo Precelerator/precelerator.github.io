@@ -16,7 +16,7 @@ export default function Chart(measurements) {
   const demoUrl = 'https://codesandbox.io/s/synchronized-line-charts-zc3nl';
   return (
     <>
-      <div class="row">
+      <div className="row">
         <div className="col-lg-6">
           <h4>Lufttemperatur</h4>
           <ResponsiveContainer width="100%" height={200}>
@@ -62,7 +62,7 @@ export default function Chart(measurements) {
           </ResponsiveContainer>
         </div>
       </div>
-      <div class="row">
+      <div className="row">
         <div className="col-lg-6">
           <h4>Batterie Spannung</h4>
           <ResponsiveContainer width="100%" height={200}>
@@ -108,7 +108,7 @@ export default function Chart(measurements) {
           </ResponsiveContainer>
         </div>
       </div>
-      <div class="row">
+      <div className="row">
         <div className="col-lg-12">
           <h4>Wasserstand</h4>
           <ResponsiveContainer width="100%" height={200}>

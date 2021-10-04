@@ -17,7 +17,7 @@ export default function EventCard({
         />
         <div className="content">
           <span
-            class={`badge badge-pill ${
+            className={`badge badge-pill ${
               mode == 'Online/Zoom' ? 'badge-online' : ''
             } ${mode == 'Hybrid' ? 'badge-hybrid' : ''} ${
               mode == 'Vor Ort' ? 'badge-vorort' : ''
