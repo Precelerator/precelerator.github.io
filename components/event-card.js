@@ -114,4 +114,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('einführungstage')) {
     return `${base}-einfuehrungstage.jpg`;
   }
+  if (title.toLowerCase().includes('camper')) {
+    return `${base}-camper.jpeg`;
+  }
 };
