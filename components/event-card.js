@@ -127,6 +127,6 @@ const getImageLink = (title) => {
     return `${base}-licht.jpeg`;
   }
   if (title.toLowerCase().includes('w-bau')) {
-    return `${base}-wbau.jpg`;
+    return `${base}-wbau.png`;
   }
 };
