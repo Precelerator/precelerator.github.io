@@ -75,6 +75,9 @@ const getImageLink = (title) => {
   ) {
     return `${base}-make.jpg`;
   }
+  if (title.toLowerCase().includes('open-source')) {
+    return `${base}-opensource.jpg`;
+  }
   if (
     title.toLowerCase().includes('digital prototyping') ||
     title.toLowerCase().includes('coding')
@@ -128,5 +131,8 @@ const getImageLink = (title) => {
   }
   if (title.toLowerCase().includes('w-bau')) {
     return `${base}-wbau.png`;
+  }
+  if (title.toLowerCase().includes('drohne')) {
+    return `${base}-drohne.jpg`;
   }
 };
