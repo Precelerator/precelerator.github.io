@@ -135,4 +135,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('drohne')) {
     return `${base}-drohne.jpg`;
   }
+  if (title.toLowerCase().includes('shirt')) {
+    return `${base}-shirt.png`;
+  }
 };
