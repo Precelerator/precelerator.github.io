@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import Layout from '../../components/layout';
 import SiteHeader from '../../components/site-header';
@@ -18,13 +19,30 @@ export default function Project() {
   };
   const [project, setProject] = useState(object);
 
+  const router = useRouter();
+  const { pid } = router.query;
+
   useEffect(function effectFunction() {
-    let projectId = window.location.href.split('/').pop();
-    fetch(
-      `https://func-projektwand-backend.azurewebsites.net/api/GetProject?id=${projectId}&code=Iabzt16AezYrjIboXgavTwnKCLPFLfA2PQVApHhSpHR7nyu5yTmQFA==`,
-    )
-      .then((response) => response.json())
-      .then((project) => setProject(project));
+    let rowNumber = pid + 1;
+    console.log({ rowNumber });
+    let response = fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/18eHzl01G3aZtwc2w9IBerXe0UZngFIcNSC80BI4IWVk/values/Projekte!A${rowNumber}:I${rowNumber}?key=AIzaSyCX32t2n7qDJtKNyk13yQCk73uQYLy6b50`,
+    );
+    const projectsJSON = response.json();
+    console.log({ projectsJSON });
+    let projects = [];
+    // projectsJSON.values.forEach((projectValue) => {
+    //   projects.push({
+    //     projektname: projectValue[0],
+    //     kurzbeschreibung: projectValue[1],
+    //     ausfuehrlicheBeschreibung: projectValue[4],
+    //     kategorie: projectValue[6],
+    //     kurzbeschreibungErsteller: projectValue[7],
+    //     suchtNach: projectValue[3],
+    //     onlineSeit: projectValue[8],
+    //   });
+    // });
+    setProject([]);
   }, []);
 
   return (
@@ -52,3 +70,47 @@ export default function Project() {
     </Layout>
   );
 }
+
+// export const getStaticPaths = async () => {
+//   const response = await fetch(
+//     'https://sheets.googleapis.com/v4/spreadsheets/18eHzl01G3aZtwc2w9IBerXe0UZngFIcNSC80BI4IWVk/values/Projekte!A2:I50?key=AIzaSyCX32t2n7qDJtKNyk13yQCk73uQYLy6b50',
+//   );
+//   const projectsJSON = await response.json();
+
+//   // generate the paths
+//   const paths = projectsJSON.values.map((project) => ({
+//     params: { id: String(projectsJSON.values.indexOf(project)) }, // keep in mind if post.id is a number you need to stringify post.id
+//   }));
+
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
+
+// export async function getServerSideProps({ params }) {
+//   const router = useRouter();
+//   const { pid } = router.query;
+//   let rowNumber = pid + 1;
+//   console.log({ rowNumber });
+//   const response = await fetch(
+//     `https://sheets.googleapis.com/v4/spreadsheets/18eHzl01G3aZtwc2w9IBerXe0UZngFIcNSC80BI4IWVk/values/Projekte!A${rowNumber}:I${rowNumber}?key=AIzaSyCX32t2n7qDJtKNyk13yQCk73uQYLy6b50`,
+//   );
+//   const projectsJSON = await response.json();
+//   let projects = [];
+//   projectsJSON.values.forEach((projectValue) => {
+//     projects.push({
+//       projektname: projectValue[0],
+//       kurzbeschreibung: projectValue[1],
+//       ausfuehrlicheBeschreibung: projectValue[4],
+//       kategorie: projectValue[6],
+//       kurzbeschreibungErsteller: projectValue[7],
+//       suchtNach: projectValue[3],
+//       onlineSeit: projectValue[8],
+//     });
+//   });
+//   const project = project[0];
+//   return {
+//     props: { project },
+//   };
+// }

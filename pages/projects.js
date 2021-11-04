@@ -108,9 +108,22 @@ export default function Projects({ projects }) {
 
 export async function getStaticProps(context) {
   const response = await fetch(
-    'https://func-projektwand-backend.azurewebsites.net/api/GetProjects?code=w3aYAFhEK6j4a11lirL/UsuvQgRSG/TWuzsfbaLMBkoN29MtZ1ToPQ==',
+    'https://sheets.googleapis.com/v4/spreadsheets/18eHzl01G3aZtwc2w9IBerXe0UZngFIcNSC80BI4IWVk/values/Projekte!A2:I50?key=AIzaSyCX32t2n7qDJtKNyk13yQCk73uQYLy6b50',
   );
-  const projects = await response.json();
+  const projectsJSON = await response.json();
+
+  let projects = [];
+  projectsJSON.values.forEach((projectValue) => {
+    projects.push({
+      projektname: projectValue[0],
+      kurzbeschreibung: projectValue[1],
+      ausfuehrlicheBeschreibung: projectValue[4],
+      kategorie: projectValue[6],
+      kurzbeschreibungErsteller: projectValue[7],
+      suchtNach: projectValue[3],
+      onlineSeit: projectValue[8],
+    });
+  });
 
   return {
     props: { projects },
