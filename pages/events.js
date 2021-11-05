@@ -63,6 +63,7 @@ export async function getStaticProps(context) {
     'https://sheets.googleapis.com/v4/spreadsheets/1FU8lbJiv0KvksmPILO9AqO_QskuutZD37fg6-hzGPW8/values/Veranstaltungen!A4:M50?key=AIzaSyCX32t2n7qDJtKNyk13yQCk73uQYLy6b50',
   );
   const eventsJSON = await response.json();
+  console.log(eventsJSON);
 
   let events = [];
   eventsJSON.values.forEach((eventValue) => {
@@ -72,7 +73,7 @@ export async function getStaticProps(context) {
       modus: eventValue[7],
       beschreibung: eventValue[10],
       uhrzeit: eventValue[11],
-      zooLink: eventValue[12],
+      zoomLink: eventValue[12],
     });
   });
 
