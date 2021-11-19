@@ -1343,6 +1343,19 @@ button {
   color: #fff;
 }
 
+/*********************/
+/*     14. Team     */
+/*********************/
+
+.start-hub .image-wrapper {
+  margin-top: 1.5rem;
+  border-radius: 0;
+}
+
+.start-hub .img-fluid {
+  max-height: 110px;
+}
+
 /***********************/
 /*     15. Contact     */
 /***********************/

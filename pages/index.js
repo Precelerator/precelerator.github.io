@@ -3,6 +3,7 @@ import Header from '../sections/header';
 import NextUp from '../sections/next-up';
 import Services from '../sections/services';
 import Team from '../sections/team';
+import Partner from '../sections/partner';
 import Institutions from '../sections/institutions';
 import Contact from '../sections/contact';
 
@@ -13,6 +14,8 @@ export default function Home({ events }) {
       <NextUp events={events.slice(0, 3)}></NextUp>
       <Services></Services>
       <Team></Team>
+      <hr></hr>
+      <Partner></Partner>
       <Institutions></Institutions>
       <Contact></Contact>
     </Layout>
