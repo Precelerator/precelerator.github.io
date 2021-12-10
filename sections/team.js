@@ -1,6 +1,6 @@
-import TeamSocial from "../components/team-social";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import TeamSocial from '../components/team-social';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -124,26 +124,6 @@ export default function Team() {
                         icon="fa fa-globe"
                       ></TeamSocial>
                     </span> */}
-            </div>
-            <div className="team-member">
-              <div className="image-wrapper">
-                <img
-                  className="img-fluid"
-                  src="/images/team-c-lab.jpg"
-                  alt="Foto Teammitglied"
-                />
-              </div>
-              <p className="p-large">
-                <strong>c.lab - a place for creativity</strong>
-              </p>
-              <p className="job-title">Studentische Offene Werkstatt</p>
-
-              <span className="social-icons">
-                <TeamSocial
-                  href="https://creative-lab-hm.de/"
-                  icon="fa fa-globe"
-                ></TeamSocial>
-              </span>
             </div>
           </div>
         </div>
