@@ -141,4 +141,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('blockchain')) {
     return `${base}-nfts.jpg`;
   }
+  if (title.toLowerCase().includes('weihnachtsgeschenke')) {
+    return `${base}-weihnachtsgeschenke.jpg`;
+  }
 };
