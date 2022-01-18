@@ -147,4 +147,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('sticker')) {
     return `${base}-stickerbomb.jpg`;
   }
+  if (title.toLowerCase().includes('sprossen')) {
+    return `${base}-sprossen.jpg`;
+  }
 };
