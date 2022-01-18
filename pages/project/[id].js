@@ -24,12 +24,10 @@ export default function Project() {
 
   useEffect(function effectFunction() {
     let rowNumber = pid + 1;
-    console.log({ rowNumber });
     let response = fetch(
       `https://sheets.googleapis.com/v4/spreadsheets/18eHzl01G3aZtwc2w9IBerXe0UZngFIcNSC80BI4IWVk/values/Projekte!A${rowNumber}:I${rowNumber}?key=AIzaSyCX32t2n7qDJtKNyk13yQCk73uQYLy6b50`,
     );
     const projectsJSON = response.json();
-    console.log({ projectsJSON });
     let projects = [];
     // projectsJSON.values.forEach((projectValue) => {
     //   projects.push({
