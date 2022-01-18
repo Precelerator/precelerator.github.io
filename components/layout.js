@@ -93,9 +93,14 @@ export default function Layout({ children, home }) {
           src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
         ></script>
         <script src="/js/mailchimp.js"></script>
+        <script
+          data-goatcounter="https://precelerator.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
         {/* Custom scripts */}
       </Head>
-      <div id="cookies-eu-banner" style={{ display: 'none' }}>
+      {/* <div id="cookies-eu-banner" style={{ display: 'none' }}>
         Wir nutzen Google Analytics und Google Fonts, um dir die Inhalte auf
         dieser Seite bereitzustellen. Klick auf "Akzeptieren", um unseren
         Cookie-Richtlinien zuzustimmen.
@@ -106,18 +111,18 @@ export default function Layout({ children, home }) {
           Akzeptieren
         </button>
         <button id="cookies-eu-reject">Ablehnen</button>
-      </div>
+      </div> */}
       {home ? <Navigation></Navigation> : <Navigation2></Navigation2>}
       {children}
       <Footer></Footer>
-      <script
+      {/* <script
         src="/js/klaro/config.klaro.js"
         type="application/javascript"
       ></script>
       <script
         src="/js/klaro/0.6.11.klaro.js"
         type="application/javascript"
-      ></script>
+      ></script> */}
     </div>
   );
 }

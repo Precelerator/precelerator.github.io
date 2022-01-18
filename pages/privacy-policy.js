@@ -69,8 +69,8 @@ export default function PrivacyPolicy() {
         <strong>Wofür nutzen wir Ihre Daten?</strong>
         <p>
           Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung
-          der Website zu gewährleisten. Andere Daten können zur Analyse Ihres
-          Nutzerverhaltens verwendet werden.
+          der Website zu gewährleisten.
+          {/* Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. */}
         </p>
         <strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong>
         <p>
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
           ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
         </p>
         <strong>Analyse-Tools und Tools von Drittanbietern</strong>
-        <p>
+        {/* <p>
           Beim Besuch unserer Website kann Ihr Surf-Verhalten statistisch
           ausgewertet werden. Das geschieht vor allem mit Cookies und mit
           sogenannten Analyseprogrammen. Die Analyse Ihres Surf-Verhaltens
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
           Sie können dieser Analyse widersprechen. Über die
           Widerspruchsmöglichkeiten werden wir Sie in dieser
           Datenschutzerklärung informieren.
-        </p>
+        </p> */}
         <h3>Allgemeine Hinweise und Pflichtinformationen</h3>
         <strong>Datenschutz</strong>
         <p>
@@ -259,7 +259,7 @@ export default function PrivacyPolicy() {
           Geschäftsbeziehung gelöscht. Gesetzliche Aufbewahrungsfristen bleiben
           unberührt.
         </p>
-        <strong>Google Analytics</strong>
+        {/* <strong>Google Analytics</strong>
         <p>
           Diese Website nutzt Funktionen des Webanalysedienstes Google
           Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway,
@@ -273,13 +273,13 @@ export default function PrivacyPolicy() {
           f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der
           Analyse des Nutzerverhaltens, um sowohl sein Webangebot als auch seine
           Werbung zu optimieren.
-        </p>
-        <p>
+        </p> */}
+        {/* <p>
           Standardmäßig ist das Tracking durch Google-Analytics deaktiviert,
           über das Cookie-Popup kann durch Klick auf "Alle Akzeptieren" diese
           Funktionalität erlaubt werden ("Opt-In").
-        </p>
-        <strong>Auftragsdatenverarbeitung</strong>
+        </p> */}
+        {/* <strong>Auftragsdatenverarbeitung</strong>
         <p>
           Wir haben mit Google einen Vertrag zur Auftragsdatenverarbeitung
           abgeschlossen und setzen die strengen Vorgaben der deutschen
@@ -296,7 +296,7 @@ export default function PrivacyPolicy() {
           Person zugeordnet werden. Sie können diese Funktion jederzeit über die
           Anzeigeneinstellungen in Ihrem Google-Konto oder die Cookie
           Einstellung dieser Seite deaktivieren.
-        </p>
+        </p> */}
       </TextContainer>
       <Breadcrumbs siteName="Datenschutzerklärung"></Breadcrumbs>
     </Layout>
