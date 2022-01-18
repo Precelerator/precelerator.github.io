@@ -69,6 +69,9 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('your gadget')) {
     return `${base}-showyourgadget.jpg`;
   }
+  if (title.toLowerCase().includes('weihnachtsgeschenke')) {
+    return `${base}-weihnachtsgeschenke.jpg`;
+  }
   if (
     title.toLowerCase().includes('make') &&
     !title.toLowerCase().includes('light')
@@ -141,7 +144,6 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('blockchain')) {
     return `${base}-nfts.jpg`;
   }
-
   if (title.toLowerCase().includes('sticker')) {
     return `${base}-stickerbomb.jpg`;
   }
