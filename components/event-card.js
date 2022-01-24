@@ -140,7 +140,10 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('home')) {
     return `${base}-smarthome.jpg`;
   }
-  if (title.toLowerCase().includes('light')) {
+  if (
+    title.toLowerCase().includes('light') &&
+    !title.toLowerCase().includes('smart')
+  ) {
     return `${base}-licht.jpeg`;
   }
   if (title.toLowerCase().includes('w-bau')) {
