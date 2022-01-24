@@ -69,6 +69,17 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('your gadget')) {
     return `${base}-showyourgadget.jpg`;
   }
+  if (title.toLowerCase().includes('smart')) {
+    if (title.toLowerCase().includes('robot')) {
+      return `${base}-roboter.png`;
+    }
+    if (title.toLowerCase().includes('alexa')) {
+      return `${base}-alexa.png`;
+    }
+    if (title.toLowerCase().includes('disko')) {
+      return `${base}-disco.png`;
+    }
+  }
   if (title.toLowerCase().includes('weihnachtsgeschenke')) {
     return `${base}-weihnachtsgeschenke.jpg`;
   }
@@ -149,16 +160,5 @@ const getImageLink = (title) => {
   }
   if (title.toLowerCase().includes('sprossen')) {
     return `${base}-sprossen.jpg`;
-  }
-  if (title.toLowerCase().includes('smart')) {
-    if (title.toLowerCase().includes('robot')) {
-      return `${base}-roboter.png`;
-    }
-    if (title.toLowerCase().includes('alexa')) {
-      return `${base}-alexa.png`;
-    }
-    if (title.toLowerCase().includes('disko')) {
-      return `${base}-disco.png`;
-    }
   }
 };
