@@ -164,4 +164,10 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('sprossen')) {
     return `${base}-sprossen.jpg`;
   }
+  if (
+    title.toLowerCase().includes('smart') &&
+    title.toLowerCase().includes('hot')
+  ) {
+    return `${base}-hot.png`;
+  }
 };
