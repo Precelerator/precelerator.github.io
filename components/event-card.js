@@ -80,6 +80,12 @@ const getImageLink = (title) => {
       return `${base}-disco.png`;
     }
   }
+  if (
+    title.toLowerCase().includes('make') &&
+    title.toLowerCase().includes('lasercut')
+  ) {
+    return `${base}-lasercut.jpg`;
+  }
   if (title.toLowerCase().includes('weihnachtsgeschenke')) {
     return `${base}-weihnachtsgeschenke.jpg`;
   }
