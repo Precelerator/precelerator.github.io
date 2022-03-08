@@ -7,6 +7,26 @@ export default function EventCard({
   zoomLink,
   id,
 }) {
+  let button;
+  if (zoomLink === 'tbd') {
+    button = (
+      <div className="btn-solid-lg" href="#">
+        Anmeldung folgt!
+      </div>
+    );
+  } else if (zoomLink === 'ohne') {
+    button = (
+      <div className="btn-solid-lg" href="#">
+        Vor Ort Ohne Anmeldung
+      </div>
+    );
+  } else {
+    button = (
+      <a className="btn-solid-lg" href={zoomLink} target="_blank">
+        Zur Anmeldung
+      </a>
+    );
+  }
   return (
     <div className="card">
       <div className="card-header" role="tab" id={title}>
@@ -50,15 +70,7 @@ export default function EventCard({
             <p className="card-text">{a}</p>
           ))}
         </div>
-        {zoomLink === 'tbd' ? (
-          <a className="btn-solid-lg" href="#">
-            Anmeldung folgt!
-          </a>
-        ) : (
-          <a className="btn-solid-lg" href={zoomLink} target="_blank">
-            Zur Anmeldung
-          </a>
-        )}
+        {button}
       </div>
     </div>
   );
