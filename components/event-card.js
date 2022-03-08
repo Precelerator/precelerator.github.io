@@ -188,4 +188,10 @@ const getImageLink = (title) => {
   ) {
     return `${base}-hot.png`;
   }
+  if (title.toLowerCase().includes('eatyourcampus')) {
+    return `${base}-eyc.jpg`;
+  }
+  if (title.toLowerCase().includes('w-gebäude')) {
+    return `${base}-wbau.jpg`;
+  }
 };
