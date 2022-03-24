@@ -194,4 +194,7 @@ const getImageLink = (title) => {
   if (title.toLowerCase().includes('w-gebäude')) {
     return `${base}-wbau.jpg`;
   }
+  if (title.toLowerCase().includes('hobby')) {
+    return `${base}-hobby.jpg`;
+  }
 };
