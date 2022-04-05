@@ -94,6 +94,12 @@ const getImageLink = (title) => {
   }
   if (
     title.toLowerCase().includes('make') &&
+    title.toLowerCase().includes('easter')
+  ) {
+    return `${base}-easter.png`;
+  }
+  if (
+    title.toLowerCase().includes('make') &&
     title.toLowerCase().includes('ostereier')
   ) {
     return `${base}-ostern.jpeg`;
