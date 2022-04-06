@@ -110,6 +110,12 @@ const getImageLink = (title) => {
   ) {
     return `${base}-lasercut.jpg`;
   }
+  if (
+    title.toLowerCase().includes('make') &&
+    title.toLowerCase().includes('fusion')
+  ) {
+    return `${base}-fusion.png`;
+  }
   if (title.toLowerCase().includes('weihnachtsgeschenke')) {
     return `${base}-weihnachtsgeschenke.jpg`;
   }
