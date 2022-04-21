@@ -69,6 +69,13 @@ export default function EventCard({
           {description.split('#').map((a) => (
             <p className="card-text">{a}</p>
           ))}
+          {title.toLowerCase().includes('synthesizer') ? (
+            <a href="https://precelerator.de/2022-03-clab_Synthkurs-Flyer.pdf">
+              Ausführliche Eventbeschreibung
+            </a>
+          ) : (
+            <></>
+          )}
         </div>
         {button}
       </div>
@@ -80,6 +87,9 @@ const getImageLink = (title) => {
   let base = '/images/e';
   if (title.toLowerCase().includes('your gadget')) {
     return `${base}-showyourgadget.jpg`;
+  }
+  if (title.toLowerCase().includes('synthesizer')) {
+    return `${base}-synthesizer.png`;
   }
   if (title.toLowerCase().includes('smart')) {
     if (title.toLowerCase().includes('robot')) {
