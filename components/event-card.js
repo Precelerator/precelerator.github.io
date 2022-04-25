@@ -5,6 +5,7 @@ export default function EventCard({
   time,
   description,
   zoomLink,
+  image,
   id,
 }) {
   let button;
@@ -32,7 +33,7 @@ export default function EventCard({
       <div className="card-header" role="tab" id={title}>
         <img
           className="eventImage"
-          src={getImageLink(title)}
+          src={'/images/' + image}
           alt="Event Illustration"
         />
         <div className="content">
