@@ -1,5 +1,5 @@
 # Precelerator Landing Page. 
-
+ 
 Die Landing Page des Precelerators ist als [Next.js](https://nextjs.org/) Anwendung unter Nutzung von [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) umgesetzt. Styling: Bootstrap
 
 Status: [![CI](https://github.com/Precelerator/precelerator.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/Precelerator/precelerator.github.io/actions/workflows/main.yml)
