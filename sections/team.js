@@ -50,6 +50,7 @@ export default function Team() {
                   alt="Foto Teammitglied"
                 />
               </div>
+              /*
               <p className="p-large">
                 <strong>Maximilian Ender</strong>
               </p>
@@ -70,27 +71,7 @@ export default function Team() {
                   alt="Foto Teammitglied"
                 />
               </div>
-              <p className="p-large">
-                <strong>Prof. Dr. Herbert Gillig</strong>
-              </p>
-              <p className="job-title">Board-Direktor Precelerator</p>
-
-              <span className="social-icons">
-                <TeamSocial
-                  href="https://www.sce.de/herbert-gillig.html"
-                  icon="fa fa-globe"
-                ></TeamSocial>
-              </span>
-            </div>
-            <div className="team-member">
-              <div className="image-wrapper">
-                <img
-                  className="img-fluid"
-                  src="/images/team-fma.jpg"
-                  alt="Foto Teammitglied"
-                />
-              </div>
-              <p className="p-large">
+               <p className="p-large">
                 <strong>Fabio Maienschein</strong>
               </p>
               <p className="job-title">Ansprechpartner Digitale Prototypen</p>
@@ -126,6 +107,27 @@ export default function Team() {
                     </span> */}
             </div>
           </div>
+              */
+              <p className="p-large">
+                <strong>Prof. Dr. Herbert Gillig</strong>
+              </p>
+              <p className="job-title">Board-Direktor Precelerator</p>
+
+              <span className="social-icons">
+                <TeamSocial
+                  href="https://www.sce.de/herbert-gillig.html"
+                  icon="fa fa-globe"
+                ></TeamSocial>
+              </span>
+            </div>
+            <div className="team-member">
+              <div className="image-wrapper">
+                <img
+                  className="img-fluid"
+                  src="/images/team-fma.jpg"
+                  alt="Foto Teammitglied"
+                />
+              </div>
         </div>
         {/* end of container */}
       </div>
