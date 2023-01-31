@@ -22,6 +22,7 @@ export default function Team() {
             {/* end of col */}
           </div>
           {/* end of row */}
+/*    
           <div className="team-container">
             <div className="team-member">
               <div className="image-wrapper">
@@ -50,7 +51,6 @@ export default function Team() {
                   alt="Foto Teammitglied"
                 />
               </div>
-              /*
               <p className="p-large">
                 <strong>Maximilian Ender</strong>
               </p>
@@ -98,16 +98,17 @@ export default function Team() {
                 <strong>Julian Kern</strong>
               </p>
               <p className="job-title">Ansprechpartner Prototypenbau</p>
-
-              {/* <span className="social-icons">
+              
+              // Was commented out start
+              { <span className="social-icons">
                       <TeamSocial
                         href="https://www.sce.de/maximilianender.html"
                         icon="fa fa-globe"
                       ></TeamSocial>
-                    </span> */}
-            //</div>
-          //</div>
-            
+                    </span> }
+              // Was commented out end
+            </div>
+          </div>  
               <p className="p-large">
                 <strong>Prof. Dr. Herbert Gillig</strong>
               </p>
@@ -129,6 +130,7 @@ export default function Team() {
                 />
               </div>
         </div>
+*/
         {/* end of container */}
       </div>
     </>
