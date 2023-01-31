@@ -105,9 +105,9 @@ export default function Team() {
                         icon="fa fa-globe"
                       ></TeamSocial>
                     </span> */}
-            </div>
-          </div>
-              */
+            //</div>
+          //</div>
+            
               <p className="p-large">
                 <strong>Prof. Dr. Herbert Gillig</strong>
               </p>
