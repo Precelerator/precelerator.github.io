@@ -13,7 +13,7 @@ export default function Home({ events }) {
       <Header></Header>
       <NextUp events={events.slice(0, 3)}></NextUp>
       <Services></Services>
-      <Team></Team>
+      
       <hr></hr>
       <Partner></Partner>
       <Institutions></Institutions>
