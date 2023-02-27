@@ -7,6 +7,8 @@ import Partner from '../sections/partner';
 import Institutions from '../sections/institutions';
 import Contact from '../sections/contact';
 
+location.href = 'https://www.sce.de/precelerator';
+
 export default function Home({ events }) {
   return (
     <Layout home={true}>
